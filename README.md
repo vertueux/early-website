@@ -1,6 +1,5 @@
 This is my own website in development. The main reason why I find myself developing my site today, is in order to publish blogs, trying to share what I do as well as discuss, even give my ideas on some issues (talk about philosophy a bit).
 
-> This project uses ReactJS, ThreeJS Fiber, and DREI (from ThreeJS Fiber).
 
 ![DISCORD](https://img.shields.io/badge/Contact%20me%20on%20Discord-now%239470-informational)
 
@@ -9,7 +8,7 @@ This is my own website in development. The main reason why I find myself develop
 Go to the [NodeJS](https://nodejs.org) page to install it on your computer, through your operating system. 
 Clone this repository by copying and pasting this line:
 ```
-git clone https://github.com/vertueux/website.git
+git clone https://github.com/vertueux/vertueux.github.io.git
 ```
 And then run `npm install` to install the dependencies.
 
