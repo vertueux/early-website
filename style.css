@@ -24,6 +24,21 @@ body {
     background: #0d1116;
 }
 
+a:link {
+    color:#3081f7;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #3081f7;
+    background-color: transparent;
+    text-decoration: none;
+ }
+ a:active {
+    color: #3081f7;
+    background-color: transparent;
+ }
+
 .navbar {
     position: absolute;
     padding: 22px;
@@ -89,7 +104,26 @@ body {
     position: relative;
     transition: transform 1000ms;
     transform-style: preserve-3d;
+    transition: all 1s;
+    text-align:left;
+    border-bottom:1px;
+    margin: 10px;
 }
+
+.back p {
+    font-size:30px;
+}
+
+.card:hover {
+    width: 450px;
+    height: 450px;
+}
+
+.card {
+    padding: 2em;
+    margin: 2em;
+}
+
 .front, .back {
     display: flex;
     height: 100%;
@@ -129,12 +163,6 @@ body {
     align-items: center;
 }
 
-/*@keyframes fadeIn {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-    
-}*/
-
 @keyframes fadeIn {
     from {
       opacity: 1;
@@ -142,7 +170,7 @@ body {
     to {
       opacity: 0;
     }
-  }
+}
 
 @media screen and (max-width:900px) {
     .navbar {
