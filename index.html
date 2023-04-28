@@ -8,12 +8,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <nav class="navbar">
+        <a href="#" class="logo"></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="https://vertueux.github.io">Home</a></li>
+                <li><a href="https://github.com/vertueux">GitHub</a></li>
+                <li><a href="#">Discord</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <img src="assets/images/button.png" alt="Menu" class="menu">
+    </nav>
+    <header></header>
+    <div class="cards">
+      <div class="container">
         <div class="card">
-            <div class="front"></div>
+            <div class="front">
+                <img src="assets/images/i2c-micro-controller.png" alt="The board">
+                <h1>I2C PWM Board</h1>
+            </div>
             <div class="back">
-                <h1>Oh, hello there!</h1>
-                <p>That's a first test.</p>
+                <p>This is a ROS2 node for controlling PWM boards based on the 
+                    PCA9685 chip with an I2C interface. Primary use is for 
+                    controlling RC Servos and DC motors via PWM.
+                </p>
             </div>
         </div>
     </div>
@@ -25,6 +44,17 @@
                 <p>Nothing to say here.</p>
             </div>
         </div>
+      </div>
     </div>
 </body>
+    <script>
+        const menu = document.querySelector(".menu")
+        const navLinks = document.querySelector(".nav-links")
+        const cards = document.querySelector(".cards")
+ 
+        menu.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu'),
+        cards.classList.toggle('mobile-card')
+        })
+    </script>
 </html>
