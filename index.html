@@ -86,10 +86,14 @@
     const menu = document.querySelector(".menu")
     const navLinks = document.querySelector(".nav-links")
     const cards = document.querySelector(".cards")
+    const intro = document.querySelector(".intro")
+    const curve = document.querySelector(".curve")
 
     menu.addEventListener('click', () => {
         navLinks.classList.toggle('mobile-menu'),
-            cards.classList.toggle('mobile-card')
+        cards.classList.toggle('mobile-card')
+        intro.classList.toggle('mobile-intro')
+        curve.classList.toggle('mobile-curve')
     })
 </script>
 

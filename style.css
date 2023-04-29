@@ -21,7 +21,6 @@ html {
 
 body {
     background: #0d1116;
-    overflow-x: hidden;
 }
 
 section  {
@@ -132,7 +131,6 @@ a:visited {
     box-sizing: border-box;
     font-size: 25px;
     z-index: 1;
-    overflow: hidden;
     opacity: 0;
     animation: appear 0.5s ease-out forwards;
 }
@@ -283,6 +281,7 @@ a:visited {
     .cards {
         grid-template-columns: repeat(2, 2fr);
         grid-auto-rows: minmax(1px, auto);
+        transition: all 0.5s ease;
     }
 }
 
@@ -294,11 +293,11 @@ a:visited {
         display: block;
     }
 
-    .navbar .logo {
+    /*.navbar .logo {
         position: absolute;
         top: 40px;
         left: 30px;
-    }
+    }*/
 
     .nav-links {
         top: 0;
@@ -317,21 +316,41 @@ a:visited {
         margin-left: -100%;
         transition: all 0.5s ease;
     }
-
+    
     .nav-links.mobile-menu {
         margin-left: 0;
     }
 
     .cards.mobile-card {
-        display: none;
+        -webkit-filter: blur(7px);
+        -moz-filter: blur(15px);
+        -o-filter: blur(15px);
+        -ms-filter: blur(15px);
+        filter: blur(15px);
     }
 
-    .cards:not(.cards.mobile-card) {
+    .intro.mobile-intro {
+        -webkit-filter: blur(7px);
+        -moz-filter: blur(15px);
+        -o-filter: blur(15px);
+        -ms-filter: blur(15px);
+        filter: blur(15px);
+    }
+
+    .curve.mobile-curve {
+        -webkit-filter: blur(7px);
+        -moz-filter: blur(15px);
+        -o-filter: blur(15px);
+        -ms-filter: blur(15px);
+        filter: blur(15px);
+    }
+
+    /*.cards:not(.cards.mobile-card) {
         animation-name: fadeIn;
         animation-duration: 1s;
         animation-direction: reverse;
         animation-iteration-count: 1;
-    }
+    }*/
 
     .cards {
         grid-template-columns: repeat(1, 1fr);
@@ -344,9 +363,13 @@ a:visited {
         align-items: center;
     }
 
-    .navbar .nav-links ul li {
+    .nav-links ul li {
         margin: 25px 0 ;
         font-weight: 600;
         font-size: 1.2em;
+    }
+
+    .navbar a {
+        color: white;
     }
 }
