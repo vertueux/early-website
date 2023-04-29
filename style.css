@@ -201,7 +201,6 @@ a:visited {
     transform: rotateY(180deg);
 }
 
-
 .card {
     display: flex;
     height: 100%;
@@ -220,10 +219,10 @@ a:visited {
 
 .back p {
     position: absolute;
-    top: 1.5em;
+    top: 2em;
     left: 1.5em;
     right: 1.5em;
-    bottom: 1.5em;
+    bottom: 2em;
     font-size:30px;
 }
 
@@ -247,6 +246,7 @@ a:visited {
     position: absolute;
     backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+    transform: rotateX(0deg)
 }
 
 .front {
