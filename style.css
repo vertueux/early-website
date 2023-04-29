@@ -20,8 +20,90 @@ html {
 }
 
 body {
-    overflow: hidden;
     background: #0d1116;
+    overflow-x: hidden;
+}
+
+section  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    min-height: 10px;
+    background: white;
+    color: black;
+}
+
+section h1 {
+    position: relative;
+    font-size: 5vw;
+    color: white;
+    /*text-shadow: 1px 1px 3px black;*/
+    -webkit-text-stroke: 0vw #383d52;
+    text-transform: uppercase;
+}
+
+section h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: black;
+    -webkit-text-stroke: 0vw white;
+    border-right: 2px solid black;
+    overflow: hidden;
+    animation: type 4s linear infinite;
+}
+
+@keyframes type {
+    0%,10%,100% {
+        width: 0.
+    }
+    70%,90% {
+        width: 45%;
+    }
+}
+
+section p {
+    color:rgb(160, 160, 160);
+    opacity: 0;
+    animation: appear 1s ease-out forwards;
+}
+
+.intro {
+    padding: 200px 20vw;
+}
+
+.curve {
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+}
+
+.curve::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #0d1116;
+    transform: translate(85%, 60%)
+}
+
+.curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: white;
+    transform: translate(-4%, 40%);
+    z-index: -1;
 }
 
 a:link {
@@ -41,17 +123,28 @@ a:visited {
 
 .navbar {
     position: absolute;
-    padding: 22px;
+    padding: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     width: 100%;
     box-sizing: border-box;
+    font-size: 25px;
+    z-index: 1;
+    overflow: hidden;
+    opacity: 0;
+    animation: appear 0.5s ease-out forwards;
+}
+
+@keyframes appear {
+    100% {
+        opacity: 1;
+    }
 }
 
 .navbar a {
-    color: white;
+    color: black;
 }
 
 .navbar .nav-links ul {
@@ -59,7 +152,7 @@ a:visited {
 }
 
 .navbar .nav-links ul li {
-    margin: 0 25px;
+    margin: 0 40px;
     font-weight: 600;
 }
 
@@ -71,18 +164,32 @@ a:visited {
     width: 35px;
 }
 
-.navbar .logo {
+/*.navbar .logo {
     width: 25px;
     height: 25px;
-}
+}*/
 
 .cards {
     height: 100vh;
-    color: rgb(255,255,255);
-    display: flex;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    grid-auto-rows: minmax(1px, auto);
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
+    opacity: 0;
+    animation: appear 0.5s ease-out 1s forwards;
+}
+
+.cards h5 {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    opacity: 0;
+    animation: appear 3s ease-out forwards;
 }
 
 .container {

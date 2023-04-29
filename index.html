@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,10 @@
     <title>Virtuous' Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav class="navbar">
-        <a href="#" class="logo"></a>
+        <!-- <a href="#" class="logo"></a> -->
         <div class="nav-links">
             <ul>
                 <li><a href="https://vertueux.github.io">Home</a></li>
@@ -18,64 +20,77 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
-        <img src="assets/images/button.png" alt="Menu" class="menu">
+        <img src="assets/images/button_black.png" alt="Menu" class="menu">
     </nav>
+    <section>
+        <div class="intro">
+            <h1 data-text="Bonjour">Bonjour</h1>
+            <p>I'm just a random guy with a passion for science.</p>
+        </div>
+        <div class="curve"></div>
+    </section>
     <div class="cards">
-      <div class="container">
-        <div class="card">
-            <div class="front">
-                <a href="https://github.com/vertueux/i2cpwm_board/"></a><img src="assets/images/i2c-micro-controller.png" alt="The board">
-                <h1><br/>I2C PWM Board</h1>
-            </div>
-            <div class="back">
-                <p>This is a ROS2 node for controlling PWM boards based on the 
-                    PCA9685 chip with an I2C interface. Primary use is for 
-                    controlling RC Servos and DC motors via PWM. 
+        <h5><br><br>Featured Projects</h5>
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <a href="https://github.com/vertueux/i2cpwm_board/"></a><img
+                        src="assets/images/i2c-micro-controller.png" alt="The board">
+                    <h1><br />I2C PWM Board</h1>
+                </div>
+                <div class="back">
+                    <p>This is a ROS2 node for controlling PWM boards based on the
+                        PCA9685 chip with an I2C interface. Primary use is for
+                        controlling RC Servos and DC motors via PWM.
 
-                    <a href="https://github.com/vertueux/i2cpwm_board">View on GitHub.</a>
-                </p>
+                        <a href="https://github.com/vertueux/i2cpwm_board">View on GitHub.</a>
+                    </p>
+                </div>
             </div>
         </div>
-     </div>
-    <div class="container">
-        <div class="card">
-            <div class="front">
-                <a href="https://github.com/vertueux/3d-rigidbody-movement/"></a><img src="assets/images/movement-project.png" width="300" height="100" alt="The board">
-                <h1><br/>Body Mechanics</h1>
-            </div>
-            <div class="back">
-                <p>It's a C# Project I made when I was 12 and learning the Unity Engine. It includes a complete player movement based on physics with a demo map.
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <a href="https://github.com/vertueux/3d-rigidbody-movement/"></a><img
+                        src="assets/images/movement-project.png" width="300" height="100" alt="The board">
+                    <h1><br />Body Mechanics</h1>
+                </div>
+                <div class="back">
+                    <p>It's a C# Project I made when I was 12 and learning the Unity Engine. It includes a complete
+                        player movement based on physics with a demo map.
 
-                    <a href="https://github.com/vertueux/3d-rigidbody-movement">View on GitHub.</a>
-                </p>
+                        <a href="https://github.com/vertueux/3d-rigidbody-movement">View on GitHub.</a>
+                    </p>
+                </div>
             </div>
         </div>
-      </div>
-    <div class="container">
-        <div class="card">
-            <div class="front">
-                <a href="https://github.com/vertueux/3d-rigidbody-movement/"></a><img src="assets/images/3d-space.png" width="300" height="100" alt="The board">
-                <h1><br/>3D Matrix Space</h1>
-            </div>
-            <div class="back">
-                <p>It's another C# project I made around 12-13 to demonstrate my knowledge about matrix calculation & rendering I learned from documentations & tutorials over the internet, using OpenGL.
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <a href="https://github.com/vertueux/3d-rigidbody-movement/"></a><img
+                        src="assets/images/3d-space.png" width="300" height="100" alt="The board">
+                    <h1><br />3D Matrix Space</h1>
+                </div>
+                <div class="back">
+                    <p>It's another C# project I made around 12-13 to demonstrate my knowledge about matrix calculation
+                        & rendering I learned from documentations & tutorials over the internet, using OpenGL.
 
-                    <a href="https://github.com/vertueux/3d-space">View on GitHub.</a>
-                </p>
+                        <a href="https://github.com/vertueux/3d-space">View on GitHub.</a>
+                    </p>
+                </div>
             </div>
         </div>
-      </div>
     </div>
-</div>
 </body>
-    <script>
-        const menu = document.querySelector(".menu")
-        const navLinks = document.querySelector(".nav-links")
-        const cards = document.querySelector(".cards")
- 
-        menu.addEventListener('click',()=>{
+<script>
+    const menu = document.querySelector(".menu")
+    const navLinks = document.querySelector(".nav-links")
+    const cards = document.querySelector(".cards")
+
+    menu.addEventListener('click', () => {
         navLinks.classList.toggle('mobile-menu'),
-        cards.classList.toggle('mobile-card')
-        })
-    </script>
+            cards.classList.toggle('mobile-card')
+    })
+</script>
+
 </html>
