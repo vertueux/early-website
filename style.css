@@ -219,11 +219,11 @@ a:visited {
 
 .back p {
     position: absolute;
-    top: 2em;
-    left: 1.5em;
-    right: 1.5em;
-    bottom: 2em;
-    font-size:30px;
+    top: 7%;
+    left: 7%;
+    right: 7%;
+    bottom: 7%;
+    font-size:135%;
 }
 
 .card:hover {
@@ -384,7 +384,7 @@ a:visited {
     }
 
     .card:hover {
-        width: 90vw;
+        width: 85vw;
         height: 20vh;
     }
 }
