@@ -246,6 +246,10 @@ a:visited {
     position: absolute;
     backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 0;
+    -webkit-transform: translate3d(0,0,0);
+    visibility:visible;
     transform: rotateX(0deg)
 }
 
@@ -271,7 +275,7 @@ a:visited {
     border-radius: 2rem;
     border: 2px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0, 0.37);
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -391,17 +395,17 @@ a:visited {
 
 @supports (-webkit-touch-callout: none) {
     .front {
-        -webkit-filter: blur(10px);
-        -moz-filter: blur(10px);
-        -ms-filter: blur(10px);
-        filter: blur(10px);
+        -webkit-filter: blur(30px);
+        -moz-filter: blur(30px);
+        -ms-filter: blur(30px);
+        filter: blur(30px);
     }
     
     
     .back {
-        -webkit-filter: blur(10px);
-        -moz-filter: blur(10px);
-        -ms-filter: blur(10px);
-        filter: blur(10px);
+        -webkit-filter: blur(30px);
+        -moz-filter: blur(30px);
+        -ms-filter: blur(30px);
+        filter: blur(30px);
     }
 }
