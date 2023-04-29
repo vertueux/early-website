@@ -391,6 +391,10 @@ a:visited {
         width: 85vw;
         height: 20vh;
     }
+
+    .cards h5 {
+        justify-content: center;
+    }
 }
 
 @supports (-webkit-touch-callout: none) {
