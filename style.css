@@ -53,7 +53,7 @@ section h1::before {
     -webkit-text-stroke: 0vw white;
     border-right: 2px solid black;
     overflow: hidden;
-    animation: type 4s linear infinite;
+    animation: type 3.5s linear infinite;
 }
 
 @keyframes type {
@@ -61,7 +61,7 @@ section h1::before {
         width: 0.
     }
     70%,90% {
-        width: 45%;
+        width: 35%;
     }
 }
 
