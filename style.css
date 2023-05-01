@@ -187,6 +187,20 @@ a:visited {
     height: 25px;
 }*/
 
+.coloredone {
+    background-color:black;
+    padding:0.5em 0.1em;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: -13px;
+
+}
+
+.coloredone a  {
+    color: white;
+    font-weight: lighter;
+}
+
 .cards {
     height: 100vh;
     color: white;
@@ -414,6 +428,10 @@ a:visited {
 
     .cards h5 {
         justify-content: center;
+    }
+
+    .coloredone {
+        margin-top: 4px;
     }
 }
 
