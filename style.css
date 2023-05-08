@@ -325,7 +325,7 @@ a:visited {
     }
 }
 
-@media screen and (max-width:1900px) {
+@media screen and (max-width:2000px) {
     .cards {
         grid-template-columns: repeat(2, 2fr);
         grid-auto-rows: minmax(1px, auto);
