@@ -47,7 +47,7 @@ section  {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     min-height: 10px;
     background: white;
     color: black;
@@ -55,7 +55,7 @@ section  {
 
 section h1 {
     position: relative;
-    font-size: 4vw;
+    font-size: 80px;
     color: white;
     /*text-shadow: 1px 1px 3px black;*/
     -webkit-text-stroke: 0vw #383d52;
@@ -81,7 +81,7 @@ section h1::before {
         width: 0.
     }
     70%,90% {
-        width: 35%;
+        width: 100%;
     }
 }
 
@@ -140,180 +140,10 @@ a:visited {
     background-color: transparent;
  }
 
-.navbar {
-    position: absolute;
-    padding: 75px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: right;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 25px;
-    z-index: 1;
-    opacity: 0;
-    animation: appear 0.5s ease-out forwards;
-}
-
 @keyframes appear {
     100% {
         opacity: 1;
     }
-}
-
-.navbar a {
-    color: black;
-}
-
-.navbar .nav-links ul {
-    display: flex;
-}
-
-.navbar .nav-links ul li {
-    margin: 0 40px;
-    font-weight: 600;
-}
-
-.navbar .menu {
-    display: none;
-    position: absolute;
-    top: 50px;
-    right: 30px;
-    width: 35px;
-}
-
-/*.navbar .logo {
-    width: 25px;
-    height: 25px;
-}*/
-
-.coloredone {
-    background-color:black;
-    padding:0.5em 0.1em;
-    border-radius: 50px;
-    text-align: center;
-    margin-top: -13px;
-
-}
-
-.coloredone a  {
-    color: white;
-    font-weight: lighter;
-}
-
-.cards {
-    height: 100vh;
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(4, 4fr);
-    grid-auto-rows: minmax(1px, auto);
-    justify-content: center;
-    align-items: center;
-    gap: 10vh;
-    opacity: 0;
-    animation: appear 0.5s ease-out 1s forwards;
-}
-
-.cards h5 {
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    color: white;
-    z-index: 1;
-    opacity: 0;
-    animation: appear 3s ease-out forwards;
-}
-
-.container {
-    width: 350px;
-    height: 350px;
-    perspective: 700px;
-}
-
-.container:hover > .card {
-    cursor: pointer;
-    transform: rotateY(180deg);
-}
-
-.card {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    transition: transform 1000ms;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    transition: all 1s;
-    text-align:left;
-    border-bottom:1px;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.back p {
-    position: absolute;
-    top: 7%;
-    left: 7%;
-    right: 7%;
-    bottom: 7%;
-    font-size:135%;
-}
-
-.card:hover {
-    width: 35vh;
-    height: 35vh;
-    transform-origin: middle;
-}
-
-.card {
-    padding: 2em;
-    margin: 2em;
-}
-
-.front, .back {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    border-radius: 2rem;
-    box-shadow: 0 0 10px 2px rgba(50, 50, 50, 0.9);
-    position: absolute;
-    backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -webkit-perspective: 0;
-    -webkit-transform: translate3d(0,0,0);
-    visibility:visible;
-    transform: rotateX(0deg)
-}
-
-.front {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 2rem;
-    border: 2px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0, 0.37);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /*gap: 0.5rem;*/
-}
-
-
-.back {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 2rem;
-    border: 2px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0, 0.37);
-    transform: rotateY(-180deg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 @keyframes fadeIn {
@@ -325,58 +155,7 @@ a:visited {
     }
 }
 
-@media screen and (max-width:2000px) {
-    .cards {
-        grid-template-columns: repeat(2, 2fr);
-        grid-auto-rows: minmax(1px, auto);
-        transition: all 0.5s ease;
-    }
-}
-
 @media screen and (max-width:900px) {
-    .navbar {
-        padding: 0;
-    }
-    .navbar .menu {
-        display: block;
-    }
-
-    /*.navbar .logo {
-        position: absolute;
-        top: 40px;
-        left: 30px;
-    }*/
-
-    .nav-links {
-        top: 0;
-        left: 0;
-        position: absolute;
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 2px solid rgba(255, 255, 255, 0.18);
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0, 0.37);
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -100%;
-        transition: all 0.5s ease;
-    }
-    
-    .nav-links.mobile-menu {
-        margin-left: 0;
-    }
-
-    .cards.mobile-card {
-        -webkit-filter: blur(7px);
-        -moz-filter: blur(15px);
-        -o-filter: blur(15px);
-        -ms-filter: blur(15px);
-        filter: blur(15px);
-    }
-
     .intro.mobile-intro {
         -webkit-filter: blur(7px);
         -moz-filter: blur(15px);
@@ -393,61 +172,7 @@ a:visited {
         filter: blur(15px);
     }
 
-    /*.cards:not(.cards.mobile-card) {
-        animation-name: fadeIn;
-        animation-duration: 1s;
-        animation-direction: reverse;
-        animation-iteration-count: 1;
-    }*/
-
-    .cards {
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: minmax(1px, auto);
-    }
-
-    .nav-links ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links ul li {
-        margin: 25px 0 ;
-        font-weight: 600;
-        font-size: 1.2em;
-    }
-
-    .navbar a {
-        color: white;
-    }
-
-    .card:hover {
-        width: 85vw;
-        height: 20vh;
-    }
-
-    .cards h5 {
-        justify-content: center;
-    }
-
     .coloredone {
         margin-top: 4px;
-    }
-}
-
-@supports (-webkit-touch-callout: none) {
-    .front {
-        -webkit-filter: blur(30px);
-        -moz-filter: blur(30px);
-        -ms-filter: blur(30px);
-        filter: blur(30px);
-    }
-    
-    
-    .back {
-        -webkit-filter: blur(30px);
-        -moz-filter: blur(30px);
-        -ms-filter: blur(30px);
-        filter: blur(30px);
     }
 }
