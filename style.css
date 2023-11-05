@@ -61,7 +61,7 @@ section  {
 
 section h1 {
     position: relative;
-    font-size: 80px;
+    font-size: 100px;
     color: white;
     /*text-shadow: 1px 1px 3px black;*/
     -webkit-text-stroke: 0vw #383d52;
@@ -98,7 +98,7 @@ section p {
 }
 
 .intro {
-    padding: 200px 20vw;
+    padding: 230px;
 }
 
 a:link {
