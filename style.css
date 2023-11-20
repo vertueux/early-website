@@ -1,0 +1,7 @@
+@import url("fonts/font-faces.css");
+@import url("navigation/navbar.css");
+
+body {
+    font-family: TestSohne-Light;
+    background: transparent;
+}
