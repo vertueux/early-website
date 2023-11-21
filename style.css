@@ -1,7 +1,11 @@
 @import url("fonts/font-faces.css");
 @import url("navigation/navbar.css");
 
+:root  {
+    --blurred-background: blur(0px);
+}
+
 body {
     font-family: TestSohne-Light;
-    background: transparent;
+    background: white;
 }

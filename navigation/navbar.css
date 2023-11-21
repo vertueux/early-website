@@ -15,7 +15,6 @@ nav {
     align-items: center;
     padding: 15px 25px;
     background: transparent;
-    box-shadow: inset 0px -1px 0px;
 }
 
 .nav-icon {
@@ -100,15 +99,16 @@ nav {
 
 /* Depending on the media. */
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     nav {
         padding: 15px 20px;
-        position: fixed
+        position: fixed;
     }
 
     .nav-icon {
         order: 2;
         margin: 0 auto;
+        margin-right: 10px;
     }
 
     .nav-icon span {
@@ -125,6 +125,7 @@ nav {
         background: transparent;
         align-items: center;
         position: relative;
+        z-index: 100;
     }
 
     .hamburger span {
@@ -152,6 +153,7 @@ nav {
 
     .hamburger.open span:nth-child(1) {
         transform: translate(0) rotate(135deg);
+        background: white;
     }
 
     .hamburger.open span:nth-child(2) {
@@ -161,6 +163,7 @@ nav {
 
     .hamburger.open span:nth-child(3) {
         transform: translate(0) rotate(-135deg);
+        background: white;
     }
 
     .navlinks-container {
@@ -169,13 +172,17 @@ nav {
         align-items: flex-start;
         position: absolute;
         background: black;
-        top: 100%;
+        top: 0;
         left: 0;
         height: 100vh;
-        padding: 15px 50px 15px 20px;
+        padding: 15px 50px 15px 200px;
         border-right: 1px solid black ;
         transform: translate(-100%);
-        height: calc(100vh - 100%);
+        height: calc(200vh - 100%);
+    }
+
+    .navlinks-container a::after {
+        display: none;
     }
 
     .open {
@@ -183,9 +190,20 @@ nav {
     }
 
     .navlinks-container a {
-        font-size: 18px;
-        margin: 10px 0;
+        top: 50px;
+        left: -190px;
+        font-size: 16px;
+        margin: 5px 10px;
         color: white;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+        width: 320%;
+    }
+
+    /* First item ("Home"). */
+    .navlinks-container a:nth-child(1) {
+        border-top: 1px solid white;
+        padding-top: 5px;
     }
 
     .main-navlinks {
@@ -195,6 +213,9 @@ nav {
     .nav-external-link {
         order: 3;
         margin-left: 0;
+
+        /* Temporal. */
+        display: none;
     }
 
     .visit-website {
@@ -220,4 +241,17 @@ nav {
     .nav-icon span {
         font-size: 20px;
     }
+
+    .navlinks-container { 
+        width: 100%;
+    }
+
+    .navlinks-container a {
+        width: 185%;
+    }
 }
+
+/* Adapting the filter. */
+.nav-icon { filter: var(--blurred-background);}
+.nav-external-link { filter: var(--blurred-background);}
+
