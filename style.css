@@ -3,9 +3,11 @@
 
 :root  {
     --blurred-background: blur(0px);
+    --darken-background: white;
+    --margin-left-right: 18vw;
 }
 
 body {
     font-family: TestSohne-Light;
-    background: white;
+    background: var(--darken-background);
 }

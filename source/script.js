@@ -7,9 +7,11 @@ const toggleNav = () => {
     const ariaToggle = hamburgerToggler.getAttribute("aria-expanded") === "true" ? "false" : "true";
     hamburgerToggler.setAttribute("aria-expanded", ariaToggle)
     if (ariaToggle == "true") {
-        root.style.setProperty('--blurred-background', "blur(4px)");
+        root.style.setProperty('--blurred-background', "blur(2px)");
+        root.style.setProperty('--darken-background', "rgb(160, 160, 160)");
     } else {
         root.style.setProperty('--blurred-background', "blur(0px)");
+        root.style.setProperty('--darken-background', "white");
     }
     navLinksContainer.classList.toggle("open")
 }
@@ -17,10 +19,11 @@ const toggleNav = () => {
 hamburgerToggler.addEventListener("click", toggleNav)
 
 new ResizeObserver(entries => {
-    if (entries[0].contentRect.width <= 1200) {
+    if (entries[0].contentRect.width <= 1600) {
         navLinksContainer.style.transition = "transform 0.2s ease-out"
     } else {
         navLinksContainer.style.transition = "none";
         root.style.setProperty('--blurred-background', "blur(0px)");
+        root.style.setProperty('--darken-background', "white");
     }
 }).observe(document.body)
