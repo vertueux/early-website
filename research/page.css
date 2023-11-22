@@ -28,10 +28,6 @@ table, th, td {
     padding: 0.7rem;
 }
 
-table {
-    /*width: 100%;*/
-}
-
 thead th {
     position: sticky;
     top: 0;
@@ -47,11 +43,6 @@ td img {
 
     vertical-align: middle;
 }
-
-#lang {
-    margin-top: -3px;
-}
-
 /* Styling. */
 tbody tr {
     border-top: 1px solid black;
@@ -89,4 +80,50 @@ td a:active {
     color: black;
     background-color: transparent;
     text-decoration: underline;
+}
+
+@media (max-width: 1600px) {
+    #mtitle {
+        margin-left: calc(var(--margin-left-right)*0.2);
+    }
+    
+    main.table {
+        margin-left: calc(var(--margin-left-right)*0.2);
+    }
+
+    table {
+        width: 96%;
+    }
+}
+
+@media (max-width: 1000px) {
+    td:nth-child(1) {
+        display: none;
+    }
+
+    #mtitle {
+        margin-top: 200px;
+    }
+
+    /*td:nth-child(3) {
+        display: none;
+    }*/
+}
+
+@media (max-width: 800px) {
+    #mtitle {
+        font-size: 9vw;
+        margin-top: 180px;
+    }
+
+    td:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .articles p {
+        font-size: 3vw;
+    }
 }
