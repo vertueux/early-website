@@ -39,12 +39,17 @@ thead th {
 }
 
 td img {
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     margin-right: .5rem;
+    margin-top: -4px;
     border-radius: 50%;
 
     vertical-align: middle;
+}
+
+#lang {
+    margin-top: -3px;
 }
 
 /* Styling. */
@@ -52,28 +57,36 @@ tbody tr {
     border-top: 1px solid black;
 }
 
+.articles:nth-last-child(-n + 1) {
+    text-align: right;
+}
+
+.articles:nth-child(1) {
+    text-align: left;
+}
+
 /* Links. */
-a:link {
+td a:link {
     color: black;
     background-color: transparent;
     text-decoration: none;
-  }
+}
   
-  a:visited {
+td a:visited {
     color: black;
     background-color: transparent;
     text-decoration: none;
-  }
+}
   
-  a:hover {
+td a:hover {
     color: black;
     background-color: transparent;
     text-decoration: underline;
     text-underline-offset: 4px;
-  }
+}
   
-  a:active {
+td a:active {
     color: black;
     background-color: transparent;
     text-decoration: underline;
-  }
+}

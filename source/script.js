@@ -9,9 +9,11 @@ const toggleNav = () => {
     if (ariaToggle == "true") {
         root.style.setProperty('--blurred-background', "blur(2px)");
         root.style.setProperty('--darken-background', "rgb(160, 160, 160)");
+        root.style.setProperty('--nav-background-color', "transparent");
     } else {
         root.style.setProperty('--blurred-background', "blur(0px)");
         root.style.setProperty('--darken-background', "white");
+        root.style.setProperty('--nav-background-color', "white");
     }
     navLinksContainer.classList.toggle("open")
 }
@@ -25,5 +27,6 @@ new ResizeObserver(entries => {
         navLinksContainer.style.transition = "none";
         root.style.setProperty('--blurred-background', "blur(0px)");
         root.style.setProperty('--darken-background', "white");
+        root.style.setProperty('--nav-background-color', "white");
     }
 }).observe(document.body)
