@@ -15,7 +15,7 @@ main.table {
 }
 
 table {
-    width: 75%;
+    width: 61vw;
 }
 
 .table__body {
@@ -25,7 +25,7 @@ table {
 
 table, th, td {
     border-collapse: collapse;
-    padding: 1rem;
+    padding: 0.7rem;
 }
 
 table {
@@ -39,8 +39,8 @@ thead th {
 }
 
 td img {
-    width: 36px;
-    height: 36px;
+    width: 18px;
+    height: 18px;
     margin-right: .5rem;
     border-radius: 50%;
 
@@ -51,3 +51,29 @@ td img {
 tbody tr {
     border-top: 1px solid black;
 }
+
+/* Links. */
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  
+  a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
