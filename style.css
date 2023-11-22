@@ -1,10 +1,21 @@
 @import url("fonts/font-faces.css");
 @import url("navigation/navbar.css");
+@import url("research/page.css");
 
 :root  {
     --blurred-background: blur(0px);
     --darken-background: white;
     --margin-left-right: 18vw;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: black;
+}
+  
+::selection {
+    color: white;
+    background: black;
 }
 
 body {
