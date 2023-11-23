@@ -13,12 +13,10 @@ const toggleNav = () => {
         root.style.setProperty('--blurred-background', "blur(0px)"); // Change to 2px to affect page.
         root.style.setProperty('--darken-background', "rgb(130, 130, 130)");
         root.style.setProperty('--nav-background-color', "transparent");
-        search.style.display = "none";
     } else {
         root.style.setProperty('--blurred-background', "blur(0px)");
         root.style.setProperty('--darken-background', "white");
         root.style.setProperty('--nav-background-color', "white");
-        search.style.display = "block";
     }
     navLinksContainer.classList.toggle("open")
 }
