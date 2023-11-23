@@ -1,5 +1,8 @@
 const hamburgerToggler = document.querySelector(".hamburger")
 const navLinksContainer = document.querySelector(".navlinks-container")
+const search = document.querySelector('.input-group input'),
+    table_rows = document.querySelectorAll('tbody tr');
+
 let root = document.documentElement;
 
 const toggleNav = () => {
@@ -10,10 +13,12 @@ const toggleNav = () => {
         root.style.setProperty('--blurred-background', "blur(0px)"); // Change to 2px to affect page.
         root.style.setProperty('--darken-background', "rgb(130, 130, 130)");
         root.style.setProperty('--nav-background-color', "transparent");
+        search.style.display = "none";
     } else {
         root.style.setProperty('--blurred-background', "blur(0px)");
         root.style.setProperty('--darken-background', "white");
         root.style.setProperty('--nav-background-color', "white");
+        search.style.display = "block";
     }
     navLinksContainer.classList.toggle("open")
 }
@@ -30,3 +35,14 @@ new ResizeObserver(entries => {
         root.style.setProperty('--nav-background-color', "white");
     }
 }).observe(document.body)
+
+search.addEventListener('input', searchTable)
+
+function searchTable() {
+    table_rows.forEach((row, i) => {
+        let table_data = row.textContent.toLowerCase(),
+            search_data = search.value.toLowerCase();
+            row.classList.toggle('hide', table_data.indexOf(search_data) < 0);
+            /*row.style.setProperty('--delay', i/25 + 's');*/
+    })
+}

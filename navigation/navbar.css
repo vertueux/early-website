@@ -179,7 +179,7 @@ nav {
     .nav-icon {
         order: 2;
         margin: 0 auto;
-        margin-right: 10px;
+        margin-right: 0px;
     }
 
     .nav-icon span {
@@ -325,4 +325,3 @@ nav {
 /* Adapting the filter. */
 .nav-icon { filter: var(--blurred-background);}
 .nav-external-link { filter: var(--blurred-background);}
-
