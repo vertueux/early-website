@@ -7,8 +7,8 @@ const toggleNav = () => {
     const ariaToggle = hamburgerToggler.getAttribute("aria-expanded") === "true" ? "false" : "true";
     hamburgerToggler.setAttribute("aria-expanded", ariaToggle)
     if (ariaToggle == "true") {
-        root.style.setProperty('--blurred-background', "blur(2px)");
-        root.style.setProperty('--darken-background', "rgb(160, 160, 160)");
+        root.style.setProperty('--blurred-background', "blur(0px)"); // Change to 2px to affect page.
+        root.style.setProperty('--darken-background', "rgb(130, 130, 130)");
         root.style.setProperty('--nav-background-color', "transparent");
     } else {
         root.style.setProperty('--blurred-background', "blur(0px)");

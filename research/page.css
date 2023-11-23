@@ -82,13 +82,21 @@ td a:active {
     text-decoration: underline;
 }
 
+/*--------Optional-----------*/
+/*.articles:nth-child(2) {
+    font-family: TestSignifier;
+}*/
+/*---------------------------*/
+
 @media (max-width: 1600px) {
     #mtitle {
-        margin-left: calc(var(--margin-left-right)*0.2);
+        margin-left: 7vw;
+        margin-right: 2vw;
     }
     
     main.table {
-        margin-left: calc(var(--margin-left-right)*0.2);
+        margin-left: 7vw;
+        margin-right: 2vw;
     }
 
     table {
@@ -124,6 +132,11 @@ td a:active {
 @media (max-width: 600px) {
 
     .articles p {
-        font-size: 3vw;
+        font-size: 2.8vw;
+    }
+
+    main.table {
+        margin-left: 3.5vw;
+        margin-right: -2vw;
     }
 }
