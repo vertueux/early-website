@@ -160,8 +160,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 @media (max-width: 1600px) {
     #mtitle {
-        margin-right: 2vw;
-        margin-left: 2vw;
+        margin-right: 2.5vw;
+        margin-left: 2.5vw;
     }
     
     main.table {
