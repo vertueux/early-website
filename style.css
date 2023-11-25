@@ -23,4 +23,5 @@
 body {
     font-family: TestSohne-Light;
     background: var(--darken-background);
+    margin-top: 1px;
 }
