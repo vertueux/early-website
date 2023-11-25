@@ -13,16 +13,8 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 20px 25px;
+    padding: 20px 20%;
     background: var(--nav-background-color);
-
-/* ------Space between borders--------*/
-    margin-left: var(--margin-left-right);
-    margin-right: var(--margin-left-right);
-}
-
-.nav-external-link {
-    margin-right: calc(var(--margin-left-right) * 2);
 }
 /* -----------------------------------*/
 
@@ -179,7 +171,7 @@ nav {
     .nav-icon {
         order: 2;
         margin: 0 auto;
-        margin-right: 0px;
+        margin-right: -4vw;
     }
 
     .nav-icon span {
