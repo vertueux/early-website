@@ -12,9 +12,9 @@ main.table {
     margin-bottom: 100px;
 }
 
-tr {
+/*tr {
     height: 50px;
-}
+}*/
 
 .table__body {
     width: 100%;
