@@ -4,6 +4,16 @@
 }
 
 @font-face {
+    font-family: TestSignifier-Light;
+    src: url("../3rd-party/signifier/TestSignifier-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: TestSignifier-ExtraLight;
+    src: url("../3rd-party/signifier/TestSignifier-Extralight.otf") format("opentype");
+}
+
+@font-face {
     font-family: TestSignifier-Bold;
     font-weight: bold;
     src: url("../3rd-party/signifier/TestSignifier-Bold.otf") format("opentype");

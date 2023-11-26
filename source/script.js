@@ -1,6 +1,7 @@
 const hamburgerToggler = document.querySelector(".hamburger")
 const navLinksContainer = document.querySelector(".navlinks-container")
 const search = document.querySelector('.input-group input'),
+    search_button = document.querySelector('.search__button'),
     table_rows = document.querySelectorAll('tbody tr');
 
 let root = document.documentElement;
@@ -34,7 +35,10 @@ new ResizeObserver(entries => {
     }
 }).observe(document.body)
 
-search.addEventListener('input', searchTable)
+//search.addEventListener('input', searchTable)
+search_button.addEventListener('click', searchTable)
+search.addEventListener('keypress', searchTableEnter);
+
 
 function searchTable() {
     table_rows.forEach((row, i) => {
@@ -43,4 +47,15 @@ function searchTable() {
             row.classList.toggle('hide', table_data.indexOf(search_data) < 0);
             /*row.style.setProperty('--delay', i/25 + 's');*/
     })
+}
+
+function searchTableEnter(event) {
+    if (event.keyCode === 13) { 
+        table_rows.forEach((row, i) => {
+            let table_data = row.textContent.toLowerCase(),
+                search_data = search.value.toLowerCase();
+                row.classList.toggle('hide', table_data.indexOf(search_data) < 0);
+                /*row.style.setProperty('--delay', i/25 + 's');*/
+        })
+    }
 }
