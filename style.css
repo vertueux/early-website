@@ -2,6 +2,7 @@
 @import url("navigation/navbar.css");
 @import url("research/page.css");
 @import url("scrollbar/scrollbar.css");
+@import url("footer/footer.css");
 
 :root  {
     --blurred-background: blur(0px);
@@ -20,8 +21,24 @@
     background: black;
 }
 
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: TestSohne-Light;
     background: var(--darken-background);
-    margin-top: 1px;
+
+    overflow-x: hidden;
+
+    /* For the footer. */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

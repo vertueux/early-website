@@ -1,15 +1,19 @@
 #mtitle {
     display: inline-block;
     font-family: TestSohne-Light;
-    margin-top: 250px;
+    margin-top: 200px;
     font-size: 70px;
     vertical-align: top;
 }
 
 main.table {
-    height: 90vh;
     background-color: transparent;
     margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+tr {
+    height: 50px;
 }
 
 .table__body {
@@ -20,6 +24,7 @@ main.table {
 table, th, td {
     border-collapse: collapse;
     padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
 }
 
 thead th {
@@ -129,27 +134,50 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 ::placeholder {
-    color: rgb(180, 180, 180);
+    color: rgb(159, 159, 159);
     opacity: 1; /* Firefox. */
     font-family: TestSohne-Light;
 }
   
 ::-ms-input-placeholder { /* Edge 12 -18. */
-    color: rgb(180, 180, 180);
+    color: rgb(159, 159, 159);
     font-family: TestSohne-Light;
 }
 
 .input-group input {
     width: 100%;
-    padding: 0 .5rem 0 .3rem;
+    padding: 0 1.0rem 0 1.0rem;
     /*background-color: transparent;*/
-    font-size: 24px;
+    font-size: 18px;
     height: 45px;
     background-color: var(--darken-background);
     border-radius: 3px;
     border: 0.5px solid rgb(184, 184, 184);
     box-shadow: none;
 }
+
+.articles p {
+    font-size: 18px;
+}
+
+.search__button {
+    display: flex;
+    margin-left: 20px;
+    width: 200px;
+    height: auto;
+    padding: 3px 3px;   
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: 0.5px solid rgb(184, 184, 184);
+    border-radius: 3px;
+}
+
+.search__button a img {
+    width: 36px;
+    text-decoration: none;
+}
+
 
 @media (min-width: 1600px) {
     #mtitle {
@@ -194,14 +222,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     #mtitle {
-        margin-top: 200px;
+        margin-top: 180px;
     }
 }
 
 @media (max-width: 800px) {
     #mtitle {
         font-size: 9vw;
-        margin-top: 180px;
+        margin-top: 160px;
     }
 
     td:nth-child(3) {
@@ -215,10 +243,19 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 @media (max-width: 600px) {
     .articles p {
-        font-size: 2.8vw;
+        font-size: 3vw;
     }
 
     .input-group {
-        font-size: 3vw;
+        font-size: 3;
     }
+
+    .search__button {
+        width: 20vw;
+    }
+}
+
+/* For the footer. */
+.page {
+    flex: 1 0 auto;
 }
