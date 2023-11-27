@@ -310,10 +310,6 @@ nav {
     .navlinks-container { 
         width: 100%;
     }
-
-    .navlinks-container a {
-        width: 78vw;
-    }
 }
 
 /* Adapting the filter. */
