@@ -235,6 +235,7 @@ nav {
         align-items: flex-start;
         position: absolute;
         background: black;
+        width: 100%;
         top: 0;
         left: 0;
         height: 100vh;
@@ -254,13 +255,14 @@ nav {
 
     .navlinks-container a {
         top: 50px;
-        left: -190px;
+        left: -150px;
         font-size: 16px;
-        margin: 5px 10px;
+        margin: 5px;
         color: white;
         border-bottom: 1px solid white;
         padding-bottom: 10px;
-        width: 340%;
+        width: 50%;
+        margin-left: 2px;
     }
 
     /* First item ("Home"). */
@@ -310,10 +312,10 @@ nav {
     }
 
     .navlinks-container a {
-        width: 89vw;
+        width: 78vw;
     }
 }
 
 /* Adapting the filter. */
-.nav-icon { filter: var(--blurred-background);}
-.nav-external-link { filter: var(--blurred-background);}
+/*.nav-icon { filter: var(--blurred-background);}
+.nav-external-link { filter: var(--blurred-background);}*/
