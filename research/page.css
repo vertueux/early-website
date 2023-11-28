@@ -8,7 +8,7 @@
 
 main.table {
     background-color: transparent;
-    margin-top: 60px;
+    margin-top: 10px;
     margin-bottom: 100px;
 }
 
@@ -36,7 +36,7 @@ thead th {
 td img {
     width: 15px;
     height: 15px;
-    margin-right: .5rem;
+    /*margin-right: .5rem;*/
     margin-top: -4px;
     /*border-radius: 50%;*/
 
@@ -149,7 +149,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     padding: 0 1.0rem 0 1.0rem;
     /*background-color: transparent;*/
     font-size: 18px;
-    height: 45px;
+    height: 50px;
     background-color: var(--darken-background);
     border-radius: 3px;
     border: 0.5px solid rgb(184, 184, 184);
@@ -164,7 +164,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     display: flex;
     margin-left: 20px;
     width: 330px;
-    height: 46px;
+    height: 50px;
     padding: 3px 3px;   
     align-items: center;
     justify-content: center;
@@ -217,24 +217,19 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         margin-right: 2vw;
         width: auto;
     }
+
+    #mtitle {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 1000px) {
     td:nth-child(1) {
         display: none;
     }
-
-    #mtitle {
-        margin-top: 180px;
-    }
 }
 
 @media (max-width: 800px) {
-    #mtitle {
-        font-size: 9vw;
-        margin-top: 160px;
-    }
-
     td:nth-child(3) {
         display: none;
     }
@@ -245,6 +240,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .search__button {
         display: none;
+    }
+
+    #mtitle {
+        font-size: 8vw;
     }
 }
 

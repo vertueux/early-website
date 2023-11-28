@@ -34,5 +34,6 @@
 @font-face {
     font-family: TestSohne-Light;
     font-weight: bold;
-    src: url("../3rd-party/sohne/TestSöhne-Leicht.otf") format("opentype");
+    /*src: url("../3rd-party/sohne/TestSöhne-Leicht.otf") format("opentype");*/
+    src: url("../3rd-party/sohne/TestSöhne-Buch.otf") format("opentype");
 }

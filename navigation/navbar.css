@@ -142,7 +142,7 @@ nav {
         transform: scaleX(0);
         transform-origin: left;
         background-color: black;
-        /*transition: transform 0.05s ease-out;*/
+       /*transition: transform 0.2s ease-out;*/
     }
     
     .navlinks-container a:hover::after {

@@ -45,7 +45,7 @@ function searchTable() {
         let table_data = row.textContent.toLowerCase(),
             search_data = search.value.toLowerCase();
             row.classList.toggle('hide', table_data.indexOf(search_data) < 0);
-            /*row.style.setProperty('--delay', i/25 + 's');*/
+            row.style.setProperty('--delay', i/25 + 's');
     })
 }
 
@@ -55,7 +55,7 @@ function searchTableEnter(event) {
             let table_data = row.textContent.toLowerCase(),
                 search_data = search.value.toLowerCase();
                 row.classList.toggle('hide', table_data.indexOf(search_data) < 0);
-                /*row.style.setProperty('--delay', i/25 + 's');*/
+                row.style.setProperty('--delay', i/25 + 's');
         })
     }
 }
