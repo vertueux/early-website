@@ -29,7 +29,7 @@
 
 body {
     font-family: TestSohne-Light;
-    background: var(--darken-background);
+    /*background: var(--darken-background);*/
 
     overflow-x: hidden;
 

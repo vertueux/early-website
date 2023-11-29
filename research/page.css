@@ -150,7 +150,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     /*background-color: transparent;*/
     font-size: 18px;
     height: 50px;
-    background-color: var(--darken-background);
+    /*background-color: var(--darken-background);*/
     border-radius: 3px;
     border: 0.5px solid rgb(184, 184, 184);
     box-shadow: none;
