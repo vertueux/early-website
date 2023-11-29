@@ -48,6 +48,13 @@ body {
 
     /* Unique to the home page. */
     background-color: black;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 /* Unique to the home page. */
