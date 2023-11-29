@@ -3,6 +3,7 @@ footer {
     /*border-top: 1px dashed #000;*/
     width: 100%;
     color: white;
+    z-index: -1;
 }
 
 .foot {
@@ -186,6 +187,11 @@ h3 {
 
 .services-list li {
     padding: 2px 0;
+}
+
+.services-medias {
+    position: relative;
+    right: 10px;
 }
 
 .services-list a {
