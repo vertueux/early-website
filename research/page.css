@@ -151,6 +151,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     font-size: 18px;
     height: 50px;
     /*background-color: var(--darken-background);*/
+    background-color: white;
     border-radius: 3px;
     border: 0.5px solid rgb(184, 184, 184);
     box-shadow: none;

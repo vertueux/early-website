@@ -135,9 +135,44 @@ nav {
     white-space: nowrap;
     width: 100%;
     overflow: hidden;
+}
+
+.page h1:nth-child(1) {
     animation:
-      typing 2s steps(14),
-      cursor .4s step-end infinite alternate;
+      typing 2s steps(15) forwards;
+}
+
+.page h1:nth-child(2) {
+    visibility: hidden;
+    animation:
+      typing 2s steps(10) forwards;
+    animation-delay: 2.4s;
+}
+
+.page h1:nth-child(3) {
+    visibility: hidden;
+    animation:
+    lasttyping 2s steps(10) forwards,
+      cursor .4s step-end infinite alternate forwards;
+    animation-delay: 4.8s;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    0% { visibility: visible; }
+    99% { border-right: 5px solid white;}
+    100% { visibility: visible; border-right: none; }
+}
+
+@keyframes lasttyping {
+    from { width: 0; }
+    0% { visibility: visible; }
+    99% { border-right: 5px solid white; }
+    100% { visibility: visible; border-right: 5px solid white; }
 }
 
 .page p {
@@ -150,20 +185,12 @@ nav {
     color: transparent;
     animation:
       animate-fade 2.0s forwards;
-    animation-delay: 3s;
+    animation-delay: 7.2s;
 }
 
 @keyframes animate-fade {
     0% { color: transparent; }
     100% { color: gray; }
-}
-
-@keyframes cursor {
-    50% { border-color: transparent }
-}
-
-@keyframes typing {
-    from { width: 0 }
 }
 
 @media (min-width: 1600px) {
