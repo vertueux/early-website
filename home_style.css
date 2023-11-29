@@ -112,8 +112,35 @@ nav {
     background: white;
 }
 
+/* Home page specific content. */
+.page h1 {
+    color: white;
+    display: inline-block;
+    font-family: TestSohne-Light; /*TestSignifier-ExtraLight. TestSohne-Light.*/
+    margin-top: 250px;
+    font-size: 70px;
+    vertical-align: top;
+}
+
+@media (min-width: 1600px) {
+    .page h1 {
+        padding: 20px 20%;
+    }
+}
+
 @media (max-width: 1600px) {
     .navlinks-container {
         border-right: 1px solid gray;
+    }
+
+    .page h1 {
+        margin-right: 2.5vw;
+        margin-left: 2.5vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .page h1 {
+        font-size: 11vw;
     }
 }
