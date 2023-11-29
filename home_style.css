@@ -1,0 +1,119 @@
+@import url("fonts/font-faces.css");
+@import url("navigation/navbar.css");
+@import url("scrollbar/scrollbar.css");
+@import url("footer/footer.css");
+
+:root  {
+    --blurred-background: blur(0px);
+    --darken-background: white;
+    --margin-left-right: 18vw;
+    --nav-background-color: white;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: black;
+}
+  
+::selection {
+    color: white;
+    background: black;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: TestSohne-Light;
+    /*background: var(--darken-background);*/
+
+    overflow-x: hidden;
+
+    /* For the footer. */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* For the footer. */
+.page {
+    flex: 1 0 100vh;
+
+    /* Unique to the home page. */
+    background-color: black;
+}
+
+/* Unique to the home page. */
+nav {
+    background-color: black;
+}
+
+.nav-icon span {
+    color: white;
+}
+
+.nav-icon img {
+    content: url(assets/icon-temporal-home.png);
+}
+
+.navlinks-container span {
+    color: white;
+}
+
+.navlinks-container a img {
+    content: url(assets/open-white.png);
+}
+
+.navlinks-container span::after {
+    background-color: white;
+}
+
+.visit-website span {
+    color: white;
+}
+
+.visit-website img {
+    content: url(assets/external-link-white.png);
+}
+
+.visit-website button {
+    background: black;
+    color: white;
+    border: 1px solid white;
+    border-color: white;
+}
+
+.visit-website span::after {
+    background-color: white;
+}
+
+.visit-website span:hover::after {
+    transform: scaleX(1);
+}
+
+.visit-website button:hover {
+    background: white;
+    color: black;
+}
+
+.visit-website button:hover img {
+    content: url('../assets/external-link.png');
+}
+
+
+.hamburger span {
+    background: white;
+}
+
+@media (max-width: 1600px) {
+    .navlinks-container {
+        border-right: 1px solid gray;
+    }
+}

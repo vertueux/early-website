@@ -4,7 +4,6 @@
 @import url("footer/footer.css");
 
 /* Pages. */
-@import url("page.css");
 @import url("research/page.css");
 
 :root  {
@@ -44,4 +43,9 @@ body {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+/* For the footer. */
+.page {
+    flex: 1 0 auto;
 }

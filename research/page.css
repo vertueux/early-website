@@ -260,8 +260,3 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         width: 20vw;
     }
 }
-
-/* For the footer. */
-.page {
-    flex: 1 0 auto;
-}
