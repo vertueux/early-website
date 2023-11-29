@@ -36,11 +36,6 @@ new ResizeObserver(entries => {
     }
 }).observe(document.body)
 
-//search.addEventListener('input', searchTable)
-search_button.addEventListener('click', searchTable)
-search.addEventListener('keypress', searchTableEnter);
-
-
 function searchTable() {
     table_rows.forEach((row, i) => {
         let table_data = row.textContent.toLowerCase(),
@@ -60,3 +55,8 @@ function searchTableEnter(event) {
         })
     }
 }
+
+// For the animation. 
+lastwelcome.addEventListener("animationend", () => {
+    lastwelcome.classList.toggle('cursor');
+});

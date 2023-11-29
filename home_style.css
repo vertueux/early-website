@@ -156,15 +156,19 @@ nav {
     animation-delay: 2.4s;
 }
 
-.page h1:nth-child(3) {
+.lastwelcome {
     visibility: hidden;
     animation:
-    lasttyping 2s steps(10) forwards,
-      cursor .4s step-end infinite alternate forwards;
+      lasttyping 2s steps(10) forwards;
     animation-delay: 4.8s;
 }
 
+.lastwelcome.cursor {
+    animation: cursor .4s step-end infinite alternate;
+}
+
 @keyframes cursor {
+    0% { width: 100%; visibility: visible; border-right: 5px solid white;}
     50% { border-color: transparent; }
 }
 
@@ -177,9 +181,9 @@ nav {
 
 @keyframes lasttyping {
     from { width: 0; }
-    0% { visibility: visible; }
+    0% { visibility: visible; border-right: 5px solid white; }
     99% { border-right: 5px solid white; }
-    100% { visibility: visible; border-right: 5px solid white; }
+    100% { visibility: visible; }
 }
 
 .page p {
