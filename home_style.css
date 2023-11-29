@@ -112,19 +112,67 @@ nav {
     background: white;
 }
 
+.htitle {
+    display: inline-block;
+}
+
 /* Home page specific content. */
+
+.page h1:nth-child(1) {
+    margin-top: 250px;
+}
+
 .page h1 {
     color: white;
-    display: inline-block;
     font-family: TestSohne-Light; /*TestSignifier-ExtraLight. TestSohne-Light.*/
-    margin-top: 250px;
     font-size: 70px;
+    margin-top: 10px;
     vertical-align: top;
+
+    /* For the animation. */
+    letter-spacing: 10px;
+    border-right: 5px solid white;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    animation:
+      typing 2s steps(14),
+      cursor .4s step-end infinite alternate;
+}
+
+.page p {
+    display: inline-block;
+    color: gray;
+    margin-top: 30px;
+    padding-right: 30vw;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0;
+    animation:
+      animate-fade 2.0s forwards;
+    animation-delay: 3s;
+}
+
+@keyframes animate-fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+@keyframes typing {
+    from { width: 0 }
 }
 
 @media (min-width: 1600px) {
-    .page h1 {
-        padding: 20px 20%;
+    .htitle {
+        padding-left: 20%;
+    }
+
+    .page p {
+        padding-left: 20%;
     }
 }
 
@@ -133,14 +181,19 @@ nav {
         border-right: 1px solid gray;
     }
 
-    .page h1 {
+    .htitle {
+        margin-right: 2.5vw;
+        margin-left: 2.5vw;
+    }
+
+    .page p {
         margin-right: 2.5vw;
         margin-left: 2.5vw;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .page h1 {
-        font-size: 11vw;
+        font-size: 8vw;
     }
 }
