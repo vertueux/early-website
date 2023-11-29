@@ -147,15 +147,15 @@ nav {
     padding-right: 30vw;
     width: 100%;
     overflow: hidden;
-    opacity: 0;
+    color: transparent;
     animation:
       animate-fade 2.0s forwards;
     animation-delay: 3s;
 }
 
 @keyframes animate-fade {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% { color: transparent; }
+    100% { color: gray; }
 }
 
 @keyframes cursor {
