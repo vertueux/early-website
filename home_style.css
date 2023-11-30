@@ -146,25 +146,25 @@ nav {
 
 .page h1:nth-child(1) {
     animation:
-      typing 2s steps(15) forwards;
+      typing 1.5s steps(9) forwards;
 }
 
 .page h1:nth-child(2) {
     visibility: hidden;
     animation:
-      typing 2s steps(10) forwards;
-    animation-delay: 2.4s;
+      typing 1.7s steps(10) forwards;
+    animation-delay: 1.7s;
 }
 
 .lastwelcome {
     visibility: hidden;
     animation:
       lasttyping 2s steps(10) forwards;
-    animation-delay: 4.8s;
+    animation-delay: 3.6s;
 }
 
 .lastwelcome.cursor {
-    animation: cursor .4s step-end infinite alternate;
+    animation: cursor .4s step-end infinite alternate forwards;
 }
 
 @keyframes cursor {
@@ -196,7 +196,7 @@ nav {
     color: transparent;
     animation:
       animate-fade 2.0s forwards;
-    animation-delay: 7.2s;
+    animation-delay: 5.8s;
 }
 
 @keyframes animate-fade {
@@ -233,5 +233,11 @@ nav {
 @media (max-width: 800px) {
     .page h1 {
         font-size: 8vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .page p {
+        font-size: 3vw;
     }
 }
