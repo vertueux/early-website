@@ -196,7 +196,7 @@ nav {
     color: transparent;
     animation:
       animate-fade 2.0s forwards;
-    animation-delay: 5.8s;
+    animation-delay: 7.8s;
 }
 
 @keyframes animate-fade {
