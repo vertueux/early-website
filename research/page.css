@@ -1,6 +1,6 @@
 #mtitle {
     display: inline-block;
-    font-family: TestSohne-Light; /*TestSignifier-ExtraLight. TestSohne-Light.*/
+    font-family: TestSohne-Light;
     margin-top: 200px;
     font-size: 70px;
     vertical-align: top;
@@ -11,10 +11,6 @@ main.table {
     margin-top: 10px;
     margin-bottom: 100px;
 }
-
-/*tr {
-    height: 50px;
-}*/
 
 .table__body {
     width: 100%;
@@ -36,10 +32,7 @@ thead th {
 td img {
     width: 15px;
     height: 15px;
-    /*margin-right: .5rem;*/
     margin-top: -4px;
-    /*border-radius: 50%;*/
-
     vertical-align: middle;
 }
 /* Styling. */
@@ -80,12 +73,6 @@ td a:active {
     background-color: transparent;
     text-decoration: underline;
 }
-
-/*--------Optional-----------*/
-/*.articles:nth-child(2) {
-    font-family: TestSignifier;
-}*/
-/*---------------------------*/
 
 tbody tr.hide {
     opacity: 0;
@@ -147,10 +134,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .input-group input {
     width: 100%;
     padding: 0 1.0rem 0 1.0rem;
-    /*background-color: transparent;*/
     font-size: 18px;
     height: 50px;
-    /*background-color: var(--darken-background);*/
     background-color: white;
     border-radius: 3px;
     border: 0.5px solid rgb(184, 184, 184);

@@ -1,0 +1,1 @@
+This is the public directory for my website, which is hosted on GitHub.

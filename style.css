@@ -13,7 +13,7 @@
     --nav-background-color: white;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection { /* Code for Firefox. */
     color: white;
     background: black;
 }
@@ -31,8 +31,6 @@
 
 body {
     font-family: TestSohne-Light;
-    /*background: var(--darken-background);*/
-
     overflow-x: hidden;
 
     /* For the footer. */

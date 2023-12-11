@@ -28,8 +28,6 @@
 
 body {
     font-family: TestSohne-Light;
-    /*background: var(--darken-background);*/
-
     overflow-x: hidden;
 
     /* For the footer. */
@@ -131,7 +129,7 @@ nav {
 
 .page h1 {
     color: white;
-    font-family: TestSohne-Light; /*TestSignifier-ExtraLight. TestSohne-Light.*/
+    font-family: TestSohne-Light; 
     font-size: 70px;
     margin-top: 10px;
     vertical-align: top;
