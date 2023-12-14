@@ -60,3 +60,8 @@ function searchTableEnter(event) {
         })
     }
 }
+
+// For the animation. 
+lastwelcome.addEventListener("animationend", () => {
+    lastwelcome.classList.toggle('cursor');
+});

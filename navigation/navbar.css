@@ -84,7 +84,7 @@ nav {
     transform: scaleX(0);
     transform-origin: left;
     background-color: black;
-    transition: transform 0.2s ease-out;
+    transition: transform 0.1s ease-out;
 }
 
 .visit-website span:hover::after {
@@ -138,7 +138,7 @@ nav {
         transform: scaleX(0);
         transform-origin: left;
         background-color: black;
-        transition: transform 0.2s ease-out;
+        transition: transform 0.1s ease-out;
     }
     
     .navlinks-container span:hover::after {
@@ -169,7 +169,7 @@ nav {
         transform: scaleX(0);
         transform-origin: left;
         background-color: black;
-       transition: transform 0.2s ease-out;
+       transition: transform 0.1s ease-out;
     }
     
     .navlinks-container a:hover::after {
