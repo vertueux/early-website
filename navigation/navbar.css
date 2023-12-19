@@ -70,7 +70,7 @@ nav {
     position: relative;
 }
 
-.visit-website a {
+.visit-website a:nth-child(1) {
     margin: 0 20px;
 }
 
@@ -138,7 +138,6 @@ nav {
         transform: scaleX(0);
         transform-origin: left;
         background-color: black;
-        transition: transform 0.1s ease-out;
     }
     
     .navlinks-container span:hover::after {
@@ -169,7 +168,6 @@ nav {
         transform: scaleX(0);
         transform-origin: left;
         background-color: black;
-       transition: transform 0.1s ease-out;
     }
     
     .navlinks-container a:hover::after {
