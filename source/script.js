@@ -72,7 +72,7 @@ if (lastwelcome) {
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
         if (search_button || search) {
-            navbar.style.setProperty('box-shadow', "1px 5px 10px rgb(193, 193, 193)");
+            navbar.style.setProperty('box-shadow', "1px 5px 10px rgb(230, 230, 230)");
         } else {
             navbar.style.setProperty('box-shadow', "1px 5px 10px black");
         }
