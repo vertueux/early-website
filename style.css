@@ -10,7 +10,6 @@
     --blurred-background: blur(0px);
     --darken-background: white;
     --margin-left-right: 18vw;
-    --nav-background-color: white;
 }
 
 ::-moz-selection { /* Code for Firefox. */

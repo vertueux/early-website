@@ -12,7 +12,8 @@ nav {
     display: flex;
     align-items: center;
     padding: 20px 20%;
-    background: var(--nav-background-color);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
     z-index: 4;
 }
 
@@ -53,7 +54,7 @@ nav {
     border-radius: 3px;
     cursor: pointer;
     border: none;
-    background: white;
+    background: transparent;
     color: black;
     border: 1px solid black;
     border-color: black;

@@ -7,7 +7,6 @@
     --blurred-background: blur(0px);
     --darken-background: white;
     --margin-left-right: 18vw;
-    --nav-background-color: white;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -58,7 +57,9 @@ body {
 
 /* Unique to the home page. */
 nav {
-    background-color: black;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 5px 10px black;
 }
 
 .nav-icon span {
@@ -90,7 +91,7 @@ nav {
 }
 
 .visit-website button {
-    background: black;
+    background: transparent;
     color: white;
     border: 1px solid white;
     border-color: white;

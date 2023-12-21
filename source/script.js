@@ -4,6 +4,7 @@ const search = document.querySelector('.input-group input'),
     search_button = document.querySelector('.search__button'),
     table_rows = document.querySelectorAll('tbody tr');
 const lastwelcome = document.querySelector('.lastwelcome');
+const navbar = document.querySelector("nav");
 
 let root = document.documentElement;
 
@@ -62,6 +63,20 @@ function searchTableEnter(event) {
 }
 
 // For the animation. 
-lastwelcome.addEventListener("animationend", () => {
-    lastwelcome.classList.toggle('cursor');
+if (lastwelcome) {
+    lastwelcome.addEventListener("animationend", () => {
+        lastwelcome.classList.toggle('cursor');
+    });
+}
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        if (search_button || search) {
+            navbar.style.setProperty('box-shadow', "1px 5px 10px rgb(193, 193, 193)");
+        } else {
+            navbar.style.setProperty('box-shadow', "1px 5px 10px black");
+        }
+    } else {
+        navbar.style.setProperty('box-shadow', "none");
+    }
 });
