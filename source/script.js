@@ -73,6 +73,13 @@ window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
         if (search_button || search) {
             navbar.style.setProperty('box-shadow', "1px 5px 10px rgb(230, 230, 230)");
+            if (window.scrollY > 1200) {
+                navbar.style.setProperty('background-color', "white");
+                navbar.style.setProperty('box-shadow', "1px 1px 5px rgb(230, 230, 230)");
+            } else {
+                navbar.style.setProperty('background-color', "transparent");
+                navbar.style.setProperty('box-shadow', "1px 5px 10px rgb(230, 230, 230)");
+            }
         } else {
             navbar.style.setProperty('box-shadow', "1px 5px 10px black");
         }
