@@ -4,7 +4,7 @@
 @import url("footer/footer.css");
 
 /* Pages. */
-@import url("research/page.css");
+@import url("index/page.css");
 
 :root  {
     --blurred-background: blur(0px);
