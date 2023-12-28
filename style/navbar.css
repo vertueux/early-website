@@ -115,7 +115,7 @@ nav {
     display: none;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1500px) {
     .navlinks-container span {
         margin: 0 2px;
         font-size: 18px;
@@ -153,7 +153,7 @@ nav {
 }
 
 /* Depending on the media. Don't forget to modifiy script.js when 'max-width' is modified.*/
-@media (max-width: 1600px) {
+@media (max-width: 1500px) {
 
     .navlinks-container a {
         margin: 0 10px;
@@ -203,7 +203,7 @@ nav {
     .nav-icon {
         order: 2;
         margin: 0 auto;
-        margin-right: -4vw;
+        margin-left: 0vw;
     }
 
     .nav-icon span {
@@ -219,8 +219,10 @@ nav {
         display: flex;
         background: transparent;
         align-items: center;
-        position: relative;
-        z-index: 3;
+        position:absolute;
+        right: 20px;
+        top: 25px;
+        z-index: 3; 
     }
 
     .hamburger span {
@@ -230,20 +232,21 @@ nav {
         background: black;
         position: absolute;
         pointer-events: none;
+        border-radius: 50px;
         transition: opacity 0.3s 0.15s ease-out;
     }
 
     .hamburger span:nth-child(1),
-    .hamburger span:nth-child(3) {
+    .hamburger span:nth-child(2) {
         transition: transform 0.3s ease-out;
     }
 
     .hamburger span:nth-child(1) {
-        transform: translateY(7px);
+        transform: translateY(5px);
     }
 
-    .hamburger span:nth-child(3) {
-        transform: translateY(-7px);
+    .hamburger span:nth-child(2) {
+        transform: translateY(-5px);
     }
 
     .hamburger.open span:nth-child(1) {
@@ -252,11 +255,6 @@ nav {
     }
 
     .hamburger.open span:nth-child(2) {
-        opacity: 0;
-        transition: opacity 0s ease-out;
-    }
-
-    .hamburger.open span:nth-child(3) {
         transform: translate(0) rotate(-135deg);
         background: white;
     }
@@ -273,7 +271,7 @@ nav {
         height: 100vh;
         padding: 15px 50px 15px 200px;
         border-right: 1px solid black ;
-        transform: translate(-100%);
+        transform: translate(100%);
         height: calc(200vh - 100%);
         z-index: 2;
     }
@@ -340,7 +338,15 @@ nav {
         font-size: 20px;
     }
 
+    .hamburger {
+        top: 20px;
+    }
+
     .navlinks-container { 
         width: 100%;
+    }
+
+    .open {
+        transform: translate(0%);
     }
 }

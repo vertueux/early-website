@@ -168,7 +168,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     color: black
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1500px) {
     #mtitle {
         padding: 20px 20%;
     }
@@ -192,7 +192,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1500px) {
     #mtitle {
         margin-right: 2.5vw;
         margin-left: 2.5vw;
