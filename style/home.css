@@ -357,6 +357,20 @@ nav {
     }
 }
 
+@media (max-width: 1900px) {
+    .htitle {
+        padding-left: 3%;
+    }
+
+    .page p {
+        padding-left: 3%;
+    }
+
+    .container {
+        margin: -370px 62% 0;
+    }
+}
+
 @media (max-width: 1600px) {
     .navlinks-container {
         border-right: 1px solid gray;

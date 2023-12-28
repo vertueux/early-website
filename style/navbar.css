@@ -146,6 +146,12 @@ nav {
     }
 }
 
+@media (max-width: 1900px) {
+    nav {
+        padding: 20px 1%;
+    }
+}
+
 /* Depending on the media. Don't forget to modifiy script.js when 'max-width' is modified.*/
 @media (max-width: 1600px) {
 
