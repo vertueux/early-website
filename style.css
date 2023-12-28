@@ -9,7 +9,6 @@
 :root  {
     --blurred-background: blur(0px);
     --darken-background: white;
-    --margin-left-right: 18vw;
 }
 
 ::-moz-selection { /* Code for Firefox. */

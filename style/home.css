@@ -6,7 +6,6 @@
 :root  {
     --blurred-background: blur(0px);
     --darken-background: white;
-    --margin-left-right: 18vw;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -212,14 +211,14 @@ nav {
 
 /* The atom.*/
 .container {
-    margin: -320px 50% 0;
+    margin: -300px 45% 0;
 }
 
 .atom {
     position: relative;
     display: flex;
-    height: 30vw;
-    width: 30vw;
+    height: 35vw;
+    width: 35vw;
     align-items: center;
     justify-content: center;
 }
@@ -331,9 +330,6 @@ nav {
 }
 
 @media (max-width: 2200px) {
-    .container {
-        margin: -320px 50% 0;
-    }
     .face {
         position: absolute;
         width: 20vw;
@@ -387,7 +383,7 @@ nav {
     }
 
     .container {
-        margin: -320px 67% 0;
+        margin: -370px 62% 0;
     }
 }
 

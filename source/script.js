@@ -1,8 +1,8 @@
 const hamburgerToggler = document.querySelector(".hamburger")
 const navLinksContainer = document.querySelector(".navlinks-container")
-const search = document.querySelector('.input-group input'),
-    search_button = document.querySelector('.search__button'),
-    table_rows = document.querySelectorAll('tbody tr');
+const search = document.querySelector('.input-group input');
+const search_button = document.querySelector('.search__button');
+const table_rows = document.querySelectorAll('tbody tr');
 const lastwelcome = document.querySelector('.lastwelcome');
 const navbar = document.querySelector("nav");
 const footer = document.querySelector("footer");
