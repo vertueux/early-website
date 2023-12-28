@@ -71,7 +71,7 @@ h3 {
 .block:nth-child(1) img {
     width: 40px;
     vertical-align: middle;
-    margin: 10px 10px;
+    margin-right: 10px;
 }
 
 
