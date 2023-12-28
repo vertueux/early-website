@@ -4,7 +4,6 @@ const search = document.querySelector('.input-group input'),
     search_button = document.querySelector('.search__button'),
     table_rows = document.querySelectorAll('tbody tr');
 const lastwelcome = document.querySelector('.lastwelcome');
-
 const navbar = document.querySelector("nav");
 const footer = document.querySelector("footer");
 

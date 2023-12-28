@@ -41,10 +41,6 @@ h3 {
     padding: 5px 0;
 }
 
-#lastp {
-    padding-bottom: 30px;
-}
-
 .services-list,
 .services-medias {
     list-style-type: none;
@@ -227,7 +223,6 @@ h3 {
     background-color: black;
 }
 
-
 @media screen and (max-width: 1300px) {
     .footer-content {
         width: 700px;
@@ -242,6 +237,10 @@ h3 {
     .block:nth-child(1),
     .block:nth-child(2) {
         margin-bottom: 50px;
+    }
+
+    #lastp {
+        padding-bottom: 30px;
     }
 }
 
@@ -262,5 +261,9 @@ h3 {
 
     .block:nth-child(1) {
         margin-top: 0;
+    }
+
+    #lastp {
+        padding-bottom: 0px;
     }
 }
