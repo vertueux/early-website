@@ -1,7 +1,7 @@
-@import url("style/font-faces.css");
-@import url("style/navbar.css");
-@import url("style/scrollbar.css");
-@import url("style/footer.css");
+@import url("font-faces.css");
+@import url("navbar.css");
+@import url("scrollbar.css");
+@import url("footer.css");
 
 :root  {
     --blurred-background: blur(0px);
@@ -63,16 +63,8 @@ nav {
     color: white;
 }
 
-.nav-icon img {
-    content: url(assets/icon-temporal-home.png);
-}
-
 .navlinks-container span {
     color: white;
-}
-
-.navlinks-container a img {
-    content: url(assets/open-white.png);
 }
 
 .navlinks-container span::after {
@@ -83,9 +75,6 @@ nav {
     color: white;
 }
 
-.visit-website img {
-    content: url(assets/external-link-white.png);
-}
 
 .visit-website button {
     background: transparent;
