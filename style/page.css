@@ -196,12 +196,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     #mtitle {
         margin-right: 2.5vw;
         margin-left: 2.5vw;
+        padding: 0;
     }
     
     main.table {
         margin-right: 1vw;
         margin-left: 1vw;
         width: auto;
+        padding: 0;
     }
 
     table {
