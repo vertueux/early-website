@@ -323,10 +323,6 @@ nav {
     .page p {
         padding-left: 20%;
     }
-
-    .lines {
-        padding: 20px 20%;
-    }
 }
 
 @media (max-width: 2200px) {
@@ -374,12 +370,6 @@ nav {
     .page p {
         margin-right: 2.5vw;
         margin-left: 2.5vw;
-    }
-
-    .lines {
-        margin-left: 2vw;
-        margin-right: 2vw;
-        width: auto;
     }
 
     .container {
