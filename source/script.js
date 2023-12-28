@@ -4,7 +4,9 @@ const search = document.querySelector('.input-group input'),
     search_button = document.querySelector('.search__button'),
     table_rows = document.querySelectorAll('tbody tr');
 const lastwelcome = document.querySelector('.lastwelcome');
+
 const navbar = document.querySelector("nav");
+const footer = document.querySelector("footer");
 
 let root = document.documentElement;
 
@@ -69,21 +71,16 @@ if (lastwelcome) {
     });
 }
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
-        if (search_button || search) {
-            navbar.style.setProperty('box-shadow', "1px 5px 10px rgb(230, 230, 230)");
-            if (window.scrollY > 1250) {
-                navbar.style.setProperty('background-color', "white");
-                navbar.style.setProperty('box-shadow', "1px 1px 5px rgb(230, 230, 230)");
-            } else {
-                navbar.style.setProperty('background-color', "transparent");
-                navbar.style.setProperty('box-shadow', "1px 5px 10px rgb(230, 230, 230)");
-            }
-        } else {
-            navbar.style.setProperty('box-shadow', "1px 5px 10px black");
-        }
-    } else {
-        navbar.style.setProperty('box-shadow', "none");
-    }
+window.addEventListener('scroll', function () {
+    const navrect = navbar.getBoundingClientRect();
+    const footrect = footer.getBoundingClientRect();
+
+    if (navrect.top <= footrect.top + footrect.height && navrect.top + navrect.height > footrect.top
+        && (search || search_button)) { 
+        // Touching or overlapping.
+        navbar.style.setProperty('background-color', "white");
+    } else { 
+        if (search || search_button) 
+            navbar.style.setProperty('background-color', "transparent");
+    } 
 });
