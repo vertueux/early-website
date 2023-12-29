@@ -206,7 +206,7 @@ nav {
 .line-0 {
     --color: white;
     border-radius: 50%;
-    /*filter: drop-shadow(0 0 10px var(--color));*/
+    filter: drop-shadow(0 0 3px var(--color));
     animation: line0 2s linear infinite;
 }
 
@@ -223,7 +223,7 @@ nav {
 .line-1 {
     --color: white;
     border-radius: 50%;
-    /*filter: drop-shadow(0 0 10px var(--color));*/
+    filter: drop-shadow(0 0 3px var(--color));
     animation: line1 2s linear infinite;
 }
 
@@ -239,7 +239,7 @@ nav {
 .line-2 {
     --color: white;
     border-radius: 50%;
-    /*filter: drop-shadow(0 0 10px var(--color));*/
+    filter: drop-shadow(0 0 3px var(--color));
     animation: line2 2s linear infinite;
 }
 
@@ -255,7 +255,7 @@ nav {
 .line-3 {
     --color: white;
     border-radius: 50%;
-    /*filter: drop-shadow(0 0 10px var(--color));*/
+    filter: drop-shadow(0 0 3px var(--color));
     animation: line3 2s linear infinite;
 }
 
