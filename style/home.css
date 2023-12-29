@@ -208,7 +208,7 @@ nav {
     --color: white;
     border-radius: 50%;
     filter: drop-shadow(0 0 3px var(--color));
-    animation: line0 2s linear infinite;
+    animation: line0 1s linear infinite;
 }
 
 @keyframes line0 {
@@ -225,7 +225,7 @@ nav {
     --color: white;
     border-radius: 50%;
     filter: drop-shadow(0 0 3px var(--color));
-    animation: line1 2s linear infinite;
+    animation: line1 1s linear infinite;
 }
 
 @keyframes line1 {
@@ -241,7 +241,7 @@ nav {
     --color: white;
     border-radius: 50%;
     filter: drop-shadow(0 0 3px var(--color));
-    animation: line2 2s linear infinite;
+    animation: line2 1s linear infinite;
 }
 
 @keyframes line2 {
@@ -257,7 +257,7 @@ nav {
     --color: white;
     border-radius: 50%;
     filter: drop-shadow(0 0 3px var(--color));
-    animation: line3 2s linear infinite;
+    animation: line3 1s linear infinite;
 }
 
 @keyframes line3 {

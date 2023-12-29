@@ -13,21 +13,6 @@ var navOpen = false;
 var isOverlapping = false;
 var preventReopening = false;
 
-var today = new Date()
-var curHr = today.getHours()
-
-if (curHr < 12) {
-  welcome.innerHTML = "Good morning.";
-  welcome.style.setProperty('--steps', "13");
-} else if (curHr < 18) {
-    welcome.innerHTML = "Good afternoon.";
-    welcome.style.setProperty('--steps', "15");
-} else {
-    welcome.innerHTML = "Good evening.";
-    welcome.style.setProperty('--steps', "13");
-}
-
-
 const toggleNav = () => {
     // Stop scrolling.
     document.body.classList.add("stop-scrolling");
@@ -141,3 +126,17 @@ function checkOverlap() {
 }
 
 window.addEventListener('scroll', checkOverlap);
+
+var today = new Date();
+var curHr = today.getHours();
+
+if (curHr < 12) {
+  welcome.innerHTML = "Good morning.";
+  welcome.style.setProperty('--steps', "13");
+} else if (curHr < 18) {
+    welcome.innerHTML = "Good afternoon.";
+    welcome.style.setProperty('--steps', "15");
+} else {
+    welcome.innerHTML = "Good evening.";
+    welcome.style.setProperty('--steps', "13");
+}
