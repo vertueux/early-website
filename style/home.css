@@ -109,19 +109,18 @@ nav {
 
 .htitle {
     display: inline-block;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: perspective(1px) translateX(-50%);
 }
 
 /* Home page specific content. */
-
-.page h1:nth-child(1) {
-    margin-top: 30vh;
-}
-
 .page h1 {
     color: white;
     font-family: TestSohne-Light; 
-    font-size: 70px;
-    margin-top: 10px;
+    font-size: 60px;
+    margin-top: 100px;
     vertical-align: top;
 
     /* For the animation. */
@@ -132,26 +131,11 @@ nav {
     overflow: hidden;
 }
 
-.page h1:nth-child(1) {
-    animation:
-      typing 1.5s steps(9) forwards;
+.welcome {
+    animation: typing 2.5s steps(20) forwards;
 }
 
-.page h1:nth-child(2) {
-    visibility: hidden;
-    animation:
-      typing 1.7s steps(10) forwards;
-    animation-delay: 1.7s;
-}
-
-.lastwelcome {
-    visibility: hidden;
-    animation:
-      lasttyping 2s steps(10) forwards;
-    animation-delay: 3.6s;
-}
-
-.lastwelcome.cursor {
+.welcome.cursor {
     animation: cursor 1s step-end infinite forwards;
 }
 
@@ -161,13 +145,6 @@ nav {
 }
 
 @keyframes typing {
-    from { width: 0; }
-    0% { visibility: visible; }
-    99% { border-right: 5px solid white;}
-    100% { visibility: visible; border-right: none; }
-}
-
-@keyframes lasttyping {
     from { width: 0; }
     0% { visibility: visible; border-right: 5px solid white; }
     99% { border-right: 5px solid white; }
@@ -183,7 +160,7 @@ nav {
     color: transparent;
     animation:
       animate-fade 2.0s forwards;
-    animation-delay: 7.8s;
+    animation-delay: 4s;
 }
 
 @keyframes animate-fade {
@@ -191,37 +168,18 @@ nav {
     100% { color: gray; }
 }
 
-#border1 {
-    width: 100%;
-    position: relative;
-    top: 260px;
-    margin-top: 200px;
-    margin-top: -10px;
-    margin-bottom: 20px;
-    
-    border-top: 2px solid white;
-}
-
-#border2 {
-    width: 100%;
-    position: relative;
-    top: -400px; 
-    margin-top: 35px;
-    margin-bottom: 20px;
-    
-    border-top: 2px solid white;
-}
-
 /* The atom.*/
 .container {
-    margin: -450px 45% 0;
+    margin-top: 50px;
 }
 
 .atom {
     position: relative;
+    left: 50%;
+    transform: perspective(1px) translateX(-50%);
     display: flex;
-    height: 35vw;
-    width: 35vw;
+    height: 700px;
+    width: 700px;
     align-items: center;
     justify-content: center;
 }
@@ -229,8 +187,8 @@ nav {
 .atom::before {
     content: "";
     position: absolute;
-    width: 5vw;
-    height: 5vw;
+    width: 100px;
+    height: 100px;
     background: transparent; 
     box-shadow: inset 0 0 10px #ffffff;
     border-radius: 50%;
@@ -251,7 +209,7 @@ nav {
     height: 100%;
     border-radius: 50%;
     filter: drop-shadow(0 0 10px var(--color));
-    animation: line0 1s linear infinite;
+    animation: line0 2s linear infinite;
 }
 
 @keyframes line0 {
@@ -270,7 +228,7 @@ nav {
     height: 100%;
     border-radius: 50%;
     filter: drop-shadow(0 0 10px var(--color));
-    animation: line1 1s linear infinite;
+    animation: line1 2s linear infinite;
 }
 
 @keyframes line1 {
@@ -288,7 +246,7 @@ nav {
     height: 100%;
     border-radius: 50%;
     filter: drop-shadow(0 0 10px var(--color));
-    animation: line2 1s linear infinite;
+    animation: line2 2s linear infinite;
 }
 
 @keyframes line2 {
@@ -306,7 +264,7 @@ nav {
     height: 100%;
     border-radius: 50%;
     filter: drop-shadow(0 0 10px var(--color));
-    animation: line3 1s linear infinite;
+    animation: line3 2s linear infinite;
 }
 
 @keyframes line3 {
@@ -318,91 +276,25 @@ nav {
     }
 }
 
-@media (min-width: 1500px) {
-    .htitle {
-        padding-left: 20%;
-    }
-
-    .page p {
-        padding-left: 20%;
-    }
-}
-
-@media (max-width: 2200px) {
-    .face {
-        position: absolute;
-        width: 20vw;
-        height: 20vw;
-    }
-
-    .top {
-        transform: rotateX(90deg) translateZ(10vw);
-    }
-    
-    .bottom {
-        transform: rotateX(-90deg) translateZ(10vw);
-    }
-    
-    .right {
-        transform: rotateY(90deg) translateZ(10vw);
-    }
-    
-    .left {
-        transform: rotateY(-90deg) translateZ(10vw);
-    }
-    
-    .front {
-        transform: rotateX(0deg) translateZ(10vw);
-    }
-    
-    .back {
-        transform: rotateX(-180deg) translateZ(10vw);
-    }
-}
-
-@media (max-width: 1900px) {
-    .htitle {
-        padding-left: 3%;
-    }
-
-    .page p {
-        padding-left: 3%;
-    }
-
-    .container {
-        margin: -25vw 62% 0;
-    }
-}
-
 @media (max-width: 1500px) {
     .navlinks-container {
         border-right: 1px solid gray;
     }
-
-    .htitle {
-        margin-right: 2.5vw;
-        margin-left: 2.5vw;
-    }
-
-    .page p {
-        margin-right: 2.5vw;
-        margin-left: 2.5vw;
-    }
-
-    .container {
-        margin: -30vw 62% 0;
-    }
 }
 
-
-@media (max-width: 1000px) {
-    .container {
-        display: none;
-    }
-}
 @media (max-width: 800px) {
     .page h1 {
         font-size: 8vw;
+    }
+
+    .atom {
+        height: 80vw;
+        width: 80vw;
+    }
+    
+    .atom::before {
+        width: 11vw;
+        height: 11vw;
     }
 }
 
