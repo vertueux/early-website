@@ -284,7 +284,7 @@ nav {
 
 @media (max-width: 800px) {
     .page h1 {
-        font-size: 8vw;
+        font-size: 6vw;
     }
 
     .atom {
@@ -298,8 +298,8 @@ nav {
     }
 }
 
-@media (max-width: 20vh) {
+@media (max-width: 600px) {
     .page p {
-        font-size: 3vw;
+        font-size: 2.6vw;
     }
 }
