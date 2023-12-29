@@ -6,6 +6,15 @@
     vertical-align: top;
 }
 
+.page {
+    background-color: white;
+    /*-webkit-filter: brightness(0.3);
+    -moz-filter: brightness(0.3);
+    -o-filter: brightness(0.3);
+    -ms-filter: brightness(0.3);
+    filter: brightness(0.3);*/
+}
+
 main.table {
     background-color: transparent;
     margin-top: 10px;

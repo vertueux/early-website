@@ -225,6 +225,10 @@ nav {
         z-index: 3; 
     }
 
+    .hamburger.open {
+        right: 35px;
+    }
+
     .hamburger span {
         display: block;
         width: 100%;
@@ -270,7 +274,7 @@ nav {
         left: 0;
         height: 100vh;
         padding: 15px 50px 15px 200px;
-        border-right: 1px solid black ;
+        border-left: 1px solid gray;
         transform: translate(100%);
         height: calc(200vh - 100%);
         z-index: 2;
@@ -281,7 +285,7 @@ nav {
     }
 
     .open {
-        transform: translate(0%);
+        transform: translate(75%);
     }
 
     .navlinks-container a {
@@ -348,5 +352,9 @@ nav {
 
     .open {
         transform: translate(0%);
+    }
+
+    .hamburger.open {
+        right: 20px;
     }
 }

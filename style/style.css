@@ -1,14 +1,13 @@
-@import url("style/font-faces.css");
-@import url("style/navbar.css");
-@import url("style/scrollbar.css");
-@import url("style/footer.css");
+@import url("font-faces.css");
+@import url("navbar.css");
+@import url("scrollbar.css");
+@import url("footer.css");
 
 /* Pages. */
-@import url("style/page.css");
+@import url("page.css");
 
-:root  {
-    --blurred-background: blur(0px);
-    --darken-background: white;
+::-webkit-scrollbar {
+    display: none;
 }
 
 ::-moz-selection { /* Code for Firefox. */
@@ -35,6 +34,11 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
 }
 
 /* For the footer. */

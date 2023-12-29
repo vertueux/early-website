@@ -3,9 +3,8 @@
 @import url("scrollbar.css");
 @import url("footer.css");
 
-:root  {
-    --blurred-background: blur(0px);
-    --darken-background: white;
+::-webkit-scrollbar {
+    display: none;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -33,6 +32,11 @@ body {
     display: flex;
     flex-direction: column;
     background: black;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
 }
 
 /* For the footer. */
@@ -111,7 +115,7 @@ nav {
 /* Home page specific content. */
 
 .page h1:nth-child(1) {
-    margin-top: 250px;
+    margin-top: 30vh;
 }
 
 .page h1 {
@@ -211,7 +215,7 @@ nav {
 
 /* The atom.*/
 .container {
-    margin: -300px 45% 0;
+    margin: -450px 45% 0;
 }
 
 .atom {
@@ -367,7 +371,7 @@ nav {
     }
 
     .container {
-        margin: -370px 62% 0;
+        margin: -25vw 62% 0;
     }
 }
 
@@ -387,7 +391,7 @@ nav {
     }
 
     .container {
-        margin: -370px 62% 0;
+        margin: -30vw 62% 0;
     }
 }
 

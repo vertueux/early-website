@@ -6,35 +6,75 @@ const table_rows = document.querySelectorAll('tbody tr');
 const lastwelcome = document.querySelector('.lastwelcome');
 const navbar = document.querySelector("nav");
 const footer = document.querySelector("footer");
+const page = document.querySelector(".page");
+const logo = document.getElementById("logo");
 
 let root = document.documentElement;
+var navOpen = false;
+var isOverlapping = false;
+var preventReopening = false;
 
 const toggleNav = () => {
+    // Stop scrolling.
+    document.body.classList.add("stop-scrolling");
+
     hamburgerToggler.classList.toggle("open")
     const ariaToggle = hamburgerToggler.getAttribute("aria-expanded") === "true" ? "false" : "true";
     hamburgerToggler.setAttribute("aria-expanded", ariaToggle)
-    if (ariaToggle == "true") {
-        root.style.setProperty('--blurred-background', "blur(0px)"); // Change to 2px to affect page.
-        root.style.setProperty('--darken-background', "rgb(130, 130, 130)");
-        root.style.setProperty('--nav-background-color', "transparent");
-    } else {
-        root.style.setProperty('--blurred-background', "blur(0px)");
-        root.style.setProperty('--darken-background', "white");
-        root.style.setProperty('--nav-background-color', "white");
+    if (isOverlapping == true) navbar.style.setProperty('background-color', "rgb(76, 76, 76)");
+    if (navOpen == true) {
+        // Closing the navbar.
+        navOpen = false;
+    } else if (preventReopening == false) {
+        navOpen = true;
     }
-    navLinksContainer.classList.toggle("open")
+    if (navOpen == false) {
+        checkOverlap();
+        document.body.classList.remove("stop-scrolling");
+    }
+    if (ariaToggle == "true") {
+        // Prevent from clicking.
+        page.style.setProperty('pointer-events', "none");
+        page.style.setProperty('filter', "brightness(0.3)");
+        footer.style.setProperty('filter', "brightness(0.3)");
+        logo.style.setProperty('filter', "brightness(0.3)");
+    } else {
+        page.style.setProperty('pointer-events', "auto");
+        page.style.setProperty('filter', "brightness(1.0)");
+        footer.style.setProperty('filter', "brightness(1.0)");
+        logo.style.setProperty('filter', "brightness(1.0)");
+    }
+    navLinksContainer.classList.toggle("open");
 }
 
-hamburgerToggler.addEventListener("click", toggleNav)
+hamburgerToggler.addEventListener("click", toggleNav);
+
+function closeNav() {
+    preventReopening = true;
+    navOpen = false;
+    toggleNav();
+    preventReopening = false;
+}
+
+document.addEventListener("click", (evt) => {
+    let targetEl = evt.target; // clicked element      
+    do {
+      if(targetEl == navLinksContainer || targetEl == hamburgerToggler) {
+        return;
+      }
+      targetEl = targetEl.parentNode;
+    } while (targetEl);
+    // This is a click outside.      
+    if (navOpen == true) {
+        closeNav();
+    }
+});
 
 new ResizeObserver(entries => {
     if (entries[0].contentRect.width <= 1600) {
-        navLinksContainer.style.transition = "transform 0.2s ease-out"
+        navLinksContainer.style.transition = "transform 0.1s ease-out";
     } else {
         navLinksContainer.style.transition = "none";
-        root.style.setProperty('--blurred-background', "blur(0px)");
-        root.style.setProperty('--darken-background', "white");
-        root.style.setProperty('--nav-background-color', "white");
     }
 }).observe(document.body)
 
@@ -70,16 +110,20 @@ if (lastwelcome) {
     });
 }
 
-window.addEventListener('scroll', function () {
+function checkOverlap() {
     const navrect = navbar.getBoundingClientRect();
     const footrect = footer.getBoundingClientRect();
-
     if (navrect.top <= footrect.top + footrect.height && navrect.top + navrect.height > footrect.top
         && (search || search_button)) { 
         // Touching or overlapping.
-        navbar.style.setProperty('background-color', "white");
+        isOverlapping = true;
+        if (navOpen == false) navbar.style.setProperty('background-color', "white");
     } else { 
-        if (search || search_button) 
+        if (search || search_button) {
             navbar.style.setProperty('background-color', "transparent");
+            isOverlapping = false;
+        }
     } 
-});
+}
+
+window.addEventListener('scroll', checkOverlap);
