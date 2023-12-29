@@ -59,7 +59,6 @@ nav {
     background-color: transparent;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    box-shadow: 1px 5px 10px black;
 }
 
 .nav-icon span {
