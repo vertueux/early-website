@@ -3,16 +3,30 @@ const navLinksContainer = document.querySelector(".navlinks-container")
 const search = document.querySelector('.input-group input');
 const search_button = document.querySelector('.search__button');
 const table_rows = document.querySelectorAll('tbody tr');
-const lastwelcome = document.querySelector('.welcome');
+const welcome = document.querySelector('.welcome');
 const navbar = document.querySelector("nav");
 const footer = document.querySelector("footer");
 const page = document.querySelector(".page");
 const logo = document.getElementById("logo");
 
-let root = document.documentElement;
 var navOpen = false;
 var isOverlapping = false;
 var preventReopening = false;
+
+var today = new Date()
+var curHr = today.getHours()
+
+if (curHr < 12) {
+  welcome.innerHTML = "Good morning.";
+  welcome.style.setProperty('--steps', "13");
+} else if (curHr < 18) {
+    welcome.innerHTML = "Good afternoon.";
+    welcome.style.setProperty('--steps', "15");
+} else {
+    welcome.innerHTML = "Good evening.";
+    welcome.style.setProperty('--steps', "13");
+}
+
 
 const toggleNav = () => {
     // Stop scrolling.
@@ -104,9 +118,9 @@ function searchTableEnter(event) {
 }
 
 // For the animation. 
-if (lastwelcome) {
-    lastwelcome.addEventListener("animationend", () => {
-        lastwelcome.classList.toggle('cursor');
+if (welcome) {
+    welcome.addEventListener("animationend", () => {
+        welcome.classList.toggle('cursor');
     });
 }
 

@@ -124,15 +124,16 @@ nav {
     vertical-align: top;
 
     /* For the animation. */
-    letter-spacing: 10px;
-    border-right: 5px solid white;
+    letter-spacing: 7px;
+    border-right: 4px solid white;
     white-space: nowrap;
     width: 100%;
     overflow: hidden;
 }
 
 .welcome {
-    animation: typing 2.5s steps(20) forwards;
+    --steps: 0;
+    animation: typing 2.5s steps(var(--steps)) forwards;
 }
 
 .welcome.cursor {
