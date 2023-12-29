@@ -274,7 +274,7 @@ nav {
         left: 0;
         height: 100vh;
         padding: 15px 50px 15px 200px;
-        border-left: 1px solid gray;
+        border-left: 1px solid rgb(10, 10, 10);
         transform: translate(100%);
         height: calc(200vh - 100%);
         z-index: 2;
@@ -285,24 +285,23 @@ nav {
     }
 
     .open {
-        transform: translate(75%);
+        transform: translate(68%);
     }
 
     .navlinks-container a {
         top: 50px;
-        left: -150px;
         font-size: 18px;
-        margin: 5px;
+        margin: 2px;
         color: white;
-        /*border-bottom: 1px solid white;*/
+        border-bottom: 1px solid white;
         padding-bottom: 10px;
-        width: 50%;
-        margin-left: 2px;
+        width: 29vw;
+        margin-left: -185px;
     }
 
     /* First item ("Home"). */
     .navlinks-container a:nth-child(1) {
-        /*border-top: 1px solid white;*/
+        border-top: 1px solid white;
         padding-top: 5px;
     }
 
@@ -356,5 +355,9 @@ nav {
 
     .hamburger.open {
         right: 20px;
+    }
+
+    .navlinks-container a {
+        width: 90vw;
     }
 }
