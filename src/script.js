@@ -3,11 +3,11 @@ const navLinksContainer = document.querySelector(".navlinks-container")
 const search = document.querySelector('.input-group input');
 const search_button = document.querySelector('.search__button');
 const table_rows = document.querySelectorAll('tbody tr');
-const welcome = document.querySelector('.welcome');
 const navbar = document.querySelector("nav");
 const footer = document.querySelector("footer");
 const page = document.querySelector(".page");
 const logo = document.getElementById("logo");
+const onHomePage = document.querySelector(".on-home-page");
 
 var navOpen = false;
 var isOverlapping = false;
@@ -56,7 +56,7 @@ function closeNav() {
 }
 
 document.addEventListener("click", (evt) => {
-    let targetEl = evt.target; // clicked element      
+    let targetEl = evt.target;    
     do {
       if(targetEl == navLinksContainer || targetEl == hamburgerToggler) {
         return;
@@ -102,23 +102,16 @@ function searchTableEnter(event) {
     }
 }
 
-// For the animation. 
-if (welcome) {
-    welcome.addEventListener("animationend", () => {
-        welcome.classList.toggle('cursor');
-    });
-}
-
 function checkOverlap() {
     const navrect = navbar.getBoundingClientRect();
     const footrect = footer.getBoundingClientRect();
     if (navrect.top <= footrect.top + footrect.height && navrect.top + navrect.height > footrect.top
-        && (search || search_button)) { 
+        && !onHomePage) { 
         // Touching or overlapping.
         isOverlapping = true;
         if (navOpen == false) navbar.style.setProperty('background-color', "white");
     } else { 
-        if (search || search_button) {
+        if (!onHomePage) {
             navbar.style.setProperty('background-color', "transparent");
             isOverlapping = false;
         }
@@ -126,17 +119,3 @@ function checkOverlap() {
 }
 
 window.addEventListener('scroll', checkOverlap);
-
-var today = new Date();
-var curHr = today.getHours();
-
-if (curHr < 12) {
-  welcome.innerHTML = "Good morning.";
-  welcome.style.setProperty('--steps', "13");
-} else if (curHr < 18) {
-    welcome.innerHTML = "Good afternoon.";
-    welcome.style.setProperty('--steps', "15");
-} else {
-    welcome.innerHTML = "Good evening.";
-    welcome.style.setProperty('--steps', "13");
-}
