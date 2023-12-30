@@ -14,6 +14,12 @@
 }
 
 @font-face {
+    font-family: TestSignifier-Thin;
+    src: url("../assets/3rd-party/signifier/TestSignifier-Thin.otf") format("opentype");
+}
+
+
+@font-face {
     font-family: TestSignifier-Bold;
     font-weight: bold;
     src: url("../assets/3rd-party/signifier/TestSignifier-Bold.otf") format("opentype");

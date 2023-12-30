@@ -5,6 +5,7 @@
 
 /* Pages. */
 @import url("page.css");
+@import url("paper.css");
 
 ::-webkit-scrollbar {
     display: none;

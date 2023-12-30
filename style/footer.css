@@ -223,7 +223,7 @@ h3 {
     background-color: black;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
     .footer-content {
         width: 700px;
         flex-wrap: wrap;

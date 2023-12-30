@@ -27,7 +27,7 @@ nav {
     display: flex;
     align-items: center;
     text-decoration: none;
-    margin-right: 20px;
+    z-index: 6;
 }
 
 .nav-icon span {
@@ -35,7 +35,7 @@ nav {
     font-size: 22px;
     margin-left: 10px;
     color: black;
-    margin-right: 4vw;
+    margin-right: 5vw;
 }
 
 .nav-icon img {
@@ -150,6 +150,14 @@ nav {
     nav {
         padding: 20px 1%;
     }
+
+    .nav-icon {
+        margin-right: 40px;
+    }
+    
+    /*.nav-icon span {
+        margin-right: 4vw;
+    }*/
 }
 
 /* Depending on the media. Don't forget to modifiy script.js when 'max-width' is modified.*/
@@ -295,8 +303,8 @@ nav {
         color: white;
         border-bottom: 1px solid white;
         padding-bottom: 10px;
-        width: 29vw;
-        margin-left: -185px;
+        width: calc(32% + 40px);
+        margin-left: -180px;
     }
 
     /* First item ("Home"). */
