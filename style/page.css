@@ -251,7 +251,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     #mtitle {
-        font-size: 8vw;
+        font-size: 12vw;
     }
 }
 
