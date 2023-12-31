@@ -17,7 +17,7 @@ h3 {
 }
 
 .footer-content {
-    width: 1360px;
+    width: 1000px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -35,7 +35,7 @@ h3 {
 .footer-services h3,
 .footer-medias h3 {
     font-size: 18px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .footer-contact p {
@@ -61,17 +61,6 @@ h3 {
     color: white;
 }
 
-.block:nth-child(1) {
-    font-size: 22px;
-}
-
-.block:nth-child(1) img {
-    width: 40px;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-
 .services-medias img {
     width: 20px;
     margin: 10px 10px;
@@ -84,7 +73,7 @@ h3 {
     align-items: center;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1200px) {
     .footer-content {
         width: 700px;
         flex-wrap: wrap;
@@ -97,7 +86,7 @@ h3 {
 
     .block:nth-child(1),
     .block:nth-child(2) {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     #lastp {
