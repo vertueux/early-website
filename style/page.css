@@ -210,8 +210,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
     
     main.table {
-        margin-right: 1vw;
-        margin-left: 1vw;
+        margin-right: 2vw;
+        margin-left: 2vw;
         width: auto;
         padding: 0;
     }
@@ -221,7 +221,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     .input-group {
-        margin-left: 2vw;
+        margin-left: 1vw;
         margin-right: 2vw;
         width: auto;
     }
