@@ -9,6 +9,7 @@ footer {
 
 .foot {
     background: black;
+    border-top: 3px solid rgb(30, 30, 30);
 }
 
 h3 {
