@@ -160,7 +160,7 @@ input:focus {
     height: 50px;
     background-color: white;
     border-radius: 3px;
-    border: 2px solid rgb(184, 184, 184);
+    border: 1px solid rgb(184, 184, 184);
     box-shadow: none;
 }
 
@@ -177,7 +177,7 @@ input:focus {
     align-items: center;
     justify-content: center;
     background-color: black;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 4px;
     text-decoration: none;
     color: white;
