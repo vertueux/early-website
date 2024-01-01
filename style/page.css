@@ -15,7 +15,8 @@
     display: inline-block;
     font-family: TestSohne-Light;
     margin-top: 200px;
-    font-size: 70px;
+    margin-bottom: 40px;
+    font-size: 60px;
     vertical-align: top;
 }
 
@@ -127,6 +128,10 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
 
+input:focus {
+    outline: none;
+}
+
 .input-group {
     align-items: center;
     width: 100%;
@@ -155,7 +160,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 50px;
     background-color: white;
     border-radius: 3px;
-    border: 0.5px solid rgb(184, 184, 184);
+    border: 2px solid rgb(184, 184, 184);
     box-shadow: none;
 }
 
@@ -172,7 +177,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     align-items: center;
     justify-content: center;
     background-color: black;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 4px;
     text-decoration: none;
     color: white;
