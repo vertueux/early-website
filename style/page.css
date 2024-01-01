@@ -219,6 +219,10 @@ input:focus {
     .search__button {
         display: none;
     }
+
+    #mtitle {
+        font-size: 7.5vw;
+    }
 }
 
 @media (max-width: 600px) {
