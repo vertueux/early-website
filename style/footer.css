@@ -2,14 +2,13 @@ footer {
     flex-shrink: 0;
     /*border-top: 1px dashed #000;*/
     width: 100%;
-    color: white;
+    color: black;
     z-index: -1;
     background-color: white;
 }
 
 .foot {
-    background: black;
-    border-top: 3px solid rgb(30, 30, 30);
+    background: white;
 }
 
 h3 {
@@ -58,7 +57,7 @@ h3 {
 
 .services-list a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .services-medias img {
@@ -68,7 +67,7 @@ h3 {
 
 .services-medias a {
     text-decoration: none;
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
 }

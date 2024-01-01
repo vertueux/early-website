@@ -70,7 +70,7 @@ document.addEventListener("click", (evt) => {
 });
 
 new ResizeObserver(entries => {
-    if (entries[0].contentRect.width <= 1600) {
+    if (entries[0].contentRect.width <= 1300) {
         navLinksContainer.style.transition = "transform 0.1s ease-out";
     } else {
         navLinksContainer.style.transition = "none";

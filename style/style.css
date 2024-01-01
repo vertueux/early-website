@@ -2,14 +2,7 @@
 @import url("navbar.css");
 @import url("scrollbar.css");
 @import url("footer.css");
-
-/* Pages. */
 @import url("page.css");
-@import url("paper.css");
-
-::-webkit-scrollbar {
-    display: none;
-}
 
 ::-moz-selection { /* Code for Firefox. */
     color: white;
