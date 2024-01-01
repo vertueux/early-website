@@ -203,6 +203,10 @@ input:focus {
         padding-left: var(--margin-tiny);
         padding-right: var(--margin-tiny);
     }
+
+    #mtitle {
+        font-size: 50px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -221,16 +225,12 @@ input:focus {
     }
 
     #mtitle {
-        font-size: 7.5vw;
+        font-size: 40px;
     }
 }
 
 @media (max-width: 600px) {
     .articles p {
-        font-size: 3vw;
-    }
-
-    .input-group {
-        font-size: 3;
+        font-size: 15px;
     }
 }
