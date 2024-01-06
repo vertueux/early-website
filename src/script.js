@@ -56,24 +56,42 @@ function closeNav() {
 }
 
 document.addEventListener("click", (evt) => {
-    let targetEl = evt.target;    
-    do {
-      if(targetEl == navLinksContainer || targetEl == hamburgerToggler) {
-        return;
-      }
-      targetEl = targetEl.parentNode;
-    } while (targetEl);
-    // This is a click outside.      
-    if (navOpen == true) {
-        closeNav();
+    var w = window.innerWidth;
+    if (w <= 1300) {
+        let targetEl = evt.target;    
+        do {
+            if(targetEl == navLinksContainer || targetEl == hamburgerToggler) {
+                return;
+            }
+            targetEl = targetEl.parentNode;
+        } while (targetEl);
+        // This is a click outside.      
+        if (navOpen == true) {
+            closeNav();
+        }
     }
 });
-
 new ResizeObserver(entries => {
     if (entries[0].contentRect.width <= 1300) {
         navLinksContainer.style.transition = "transform 0.1s ease-out";
+        if (navOpen == true) {
+            navLinksContainer.style.setProperty('display', "block");
+            page.style.setProperty('pointer-events', "none");
+            document.body.classList.add("stop-scrolling");
+            page.style.setProperty('filter', "brightness(0.3)");
+            footer.style.setProperty('filter', "brightness(0.3)");
+            logo.style.setProperty('filter', "brightness(0.3)");
+        }
     } else {
         navLinksContainer.style.transition = "none";
+        if (navOpen == true) {
+            navLinksContainer.style.setProperty('display', "none");
+            document.body.classList.remove("stop-scrolling");
+            page.style.setProperty('pointer-events', "auto");
+            page.style.setProperty('filter', "brightness(1.0)");
+            footer.style.setProperty('filter', "brightness(1.0)");
+            logo.style.setProperty('filter', "brightness(1.0)");
+        }
     }
 }).observe(document.body)
 
