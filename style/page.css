@@ -1,6 +1,7 @@
 :root {
     --margin-tiny: 4%;
     --page-width: 1300px;
+    --page-min-height: 1000px;
 }
 
 .page {
@@ -189,6 +190,12 @@ input:focus {
 .search__button:hover {
     background-color: white;
     color: black
+}
+
+@media (max-height: 1000px) {
+    .page {
+        height: var(--page-min-height);
+    }
 }
 
 @media (max-width: 1300px) {
