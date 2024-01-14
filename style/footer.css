@@ -16,7 +16,7 @@ h3 {
 }
 
 .footer-content {
-    width: 1000px;
+    width: 1300px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -72,7 +72,7 @@ h3 {
     align-items: center;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1400px) {
     .footer-content {
         width: 700px;
         flex-wrap: wrap;
