@@ -27,7 +27,6 @@ h3 {
 
 .block {
     width: 100%;
-    margin: 0 10px;
 }
 
 .footer-contact h3, 
@@ -72,7 +71,7 @@ h3 {
     align-items: center;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1300px) {
     .footer-content {
         width: 700px;
         flex-wrap: wrap;
