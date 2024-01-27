@@ -318,6 +318,12 @@ nav {
     }
 }
 
+@media (max-width: 800px) {
+    .nav-icon span {
+        display: none;
+    }
+}
+
 @media (max-width: 500px) {
     .nav-icon img {
         width: 30px;
