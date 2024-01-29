@@ -13,8 +13,7 @@
 }
 
 #mtitle {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
     font-family: TestSohne-Light;
     margin-top: 200px;
     margin-bottom: 40px;
@@ -170,6 +169,28 @@ input:focus {
     font-size: 18px;
 }
 
+.search__button {
+    display: flex;
+    margin-left: 20px;
+    width: 330px;
+    height: 50px;
+    padding: 3px 3px;   
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.search__button:hover {
+    background-color: white;
+    color: black
+}
+
 @media (max-height: 1000px) {
     .page {
         height: max-content;
@@ -180,6 +201,10 @@ input:focus {
 @media (max-width: 1300px) {
     .page {
         width: 100%;
+    }
+
+    #mtitle {
+        padding-left: var(--margin-tiny);
     }
 
     main.table {
@@ -200,6 +225,10 @@ input:focus {
 
 @media (max-width: 800px) {
     td:nth-child(3) {
+        display: none;
+    }
+
+    .search__button {
         display: none;
     }
 
