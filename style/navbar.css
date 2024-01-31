@@ -123,35 +123,34 @@ nav {
     display: none;
 }
 
-@media (min-width: 1300px) {
-    .navlinks-container span {
-        margin: 0 2px;
-        font-size: 18px;
-        text-decoration: none;
-        color: black;
-        display: inline-block;
-        position: relative;
-    }
-    
-    .navlinks-container a {
-        margin: 0 2px;
-    }
-    
-    .navlinks-container span::after {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: -1px;
-        width: 100%;
-        height: 1px;
-        transform: scaleX(0);
-        background-color: black;
-        transition: transform 0.1s linear;
-    }
-    
-    .navlinks-container span:hover::after {
-        transform: scaleX(0.8);
-    }
+.navlinks-container span {
+    margin: 0 2px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    position: relative;
+}
+
+.navlinks-container a {
+    margin: 0 2px;
+    margin-right: 8px;
+}
+
+.navlinks-container span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    background-color: black;
+    transition: transform 0.1s linear;
+}
+
+.navlinks-container span:hover::after {
+    transform: scaleX(0.8);
 }
 
 /* Depending on the media. Don't forget to modifiy script.js when 'max-width' is modified.*/
