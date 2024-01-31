@@ -95,10 +95,7 @@ new ResizeObserver(entries => {
     }
 }).observe(document.body)
 
-if (search_button || search) {
-    search_button.addEventListener('click', searchTable)
-    search.addEventListener('keypress', searchTableEnter);
-}
+search.addEventListener('input', searchTable)
 
 function searchTable() {
     table_rows.forEach((row, i) => {
