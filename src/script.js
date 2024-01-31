@@ -1,7 +1,6 @@
 const hamburgerToggler = document.querySelector(".hamburger")
 const navLinksContainer = document.querySelector(".navlinks-container")
 const search = document.querySelector('.input-group input');
-const search_button = document.querySelector('.search__button');
 const table_rows = document.querySelectorAll('tbody tr');
 const navbar = document.querySelector("nav");
 const footer = document.querySelector("footer");
@@ -20,7 +19,6 @@ const toggleNav = () => {
     hamburgerToggler.classList.toggle("open")
     const ariaToggle = hamburgerToggler.getAttribute("aria-expanded") === "true" ? "false" : "true";
     hamburgerToggler.setAttribute("aria-expanded", ariaToggle)
-    if (isOverlapping == true) navbar.style.setProperty('background-color', "rgb(76, 76, 76)");
     if (navOpen == true) {
         // Closing the navbar.
         navOpen = false;
@@ -116,21 +114,3 @@ function searchTableEnter(event) {
         })
     }
 }
-
-function checkOverlap() {
-    const navrect = navbar.getBoundingClientRect();
-    const footrect = footer.getBoundingClientRect();
-    if (navrect.top <= footrect.top + footrect.height && navrect.top + navrect.height > footrect.top
-        && !onHomePage) { 
-        // Touching or overlapping.
-        isOverlapping = true;
-        if (navOpen == false) navbar.style.setProperty('background-color', "white");
-    } else { 
-        if (!onHomePage) {
-            navbar.style.setProperty('background-color', "transparent");
-            isOverlapping = false;
-        }
-    } 
-}
-
-window.addEventListener('scroll', checkOverlap);

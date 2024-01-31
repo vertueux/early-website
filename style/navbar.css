@@ -14,6 +14,7 @@
 nav {
     position: fixed;
     width: 100%;
+    height: 70px;
     padding-left: calc((100% - var(--page-width))/2);
     padding-right: calc((100% - var(--page-width))/2);
     display: flex;
@@ -22,9 +23,9 @@ nav {
     padding-bottom: 20px;
     left: 50%;
     transform: translate(-50%, 0);
-    background-color: transparent;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.95);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     z-index: 4;
     border-bottom: solid 1px black;
 }
@@ -46,7 +47,7 @@ nav {
     font-size: 22px;
     margin-left: 10px;
     margin-right: 50px;
-    color: black;
+    color: white;
 }
 
 .nav-icon img {
@@ -64,18 +65,18 @@ nav {
     padding: 5px 5px;
     cursor: pointer;
     background: transparent;
-    color: black;
+    color: white;
     border: none;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 3px;
-    border-color: black;
+    border-color: white;
 }
 
 .visit-website span {
     margin: 0 2px;
     font-size: 18px;
     text-decoration: none;
-    color: black;
+    color: white;
     display: inline-block;
     position: relative;
 }
@@ -92,7 +93,7 @@ nav {
     width: 100%;
     height: 1px;
     transform: scaleX(0);
-    background-color: black;
+    background-color: white;
     transition: transform 0.1s linear;
 }
 
@@ -100,20 +101,11 @@ nav {
     transform: scaleX(0.8);
 }
 
-.visit-website button:hover {
-    background: black;
-    color: white;
-}
-
 .visit-website img {
     width: 15px;
     margin-left: 2px;
 }
 
-.visit-website button:hover img {
-    width: 15px;
-    content: url('../assets/external-link-white.png');
-}
 
 .external {
     display: none;
@@ -127,7 +119,7 @@ nav {
     margin: 0 2px;
     font-size: 18px;
     text-decoration: none;
-    color: black;
+    color: white;
     display: inline-block;
     position: relative;
 }
@@ -145,7 +137,7 @@ nav {
     width: 100%;
     height: 1px;
     transform: scaleX(0);
-    background-color: black;
+    background-color: white;
     transition: transform 0.1s linear;
 }
 
@@ -159,7 +151,7 @@ nav {
         margin: 0 10px;
         font-size: 18px;
         text-decoration: none;
-        color: black;
+        color: white;
         display: inline-block;
         position: relative;
     }
@@ -218,7 +210,7 @@ nav {
         display: block;
         width: 100%;
         height: 2px;
-        background: black;
+        background: white;
         position: absolute;
         pointer-events: none;
         border-radius: 50px;
@@ -253,7 +245,7 @@ nav {
         flex-direction: column;
         align-items: flex-start;
         position: absolute;
-        background: black;
+        background: white;
         width: 100%;
         top: 0;
         left: 0;
