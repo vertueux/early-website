@@ -31,6 +31,7 @@ img::selection {
 body {
     font-family: TestSohne-Light;
     overflow-x: hidden;
+    background-color: white;
 
     /* For the footer. */
     height: 100vh;
