@@ -167,10 +167,6 @@ nav {
         z-index: 3; 
     }
 
-    .hamburger.open {
-        right: 31px;
-    }
-
     .hamburger span {
         display: block;
         width: 100%;
@@ -205,6 +201,15 @@ nav {
         background: white;
     }
 
+    @keyframes slide {
+        0% {
+          transform: translate(0, -100%);
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+    }
+
     .navlinks-container {
         display: flex;
         flex-direction: column;
@@ -214,11 +219,10 @@ nav {
         width: 100%;
         top: 0;
         left: 0;
-        height: 100vh;
         padding: 15px 50px 15px 200px;
         border-left: 1px solid rgb(10, 10, 10);
-        transform: translate(100%);
-        height: calc(200vh - 100%);
+        transform: translate(0, -100%);
+        height: 40vh;
         z-index: 2;
     }
 
@@ -226,8 +230,11 @@ nav {
         display: none;
     }
 
-    .open {
-        transform: translate(70%);
+    .navlinks-container.open {
+        animation-name: slide;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
     }
 
     .navlinks-container a {
@@ -235,16 +242,9 @@ nav {
         font-size: 18px;
         margin: 2px;
         color: white;
-        border-bottom: 1px solid white;
         padding-bottom: 10px;
         width: calc(30% + 35px);
         margin-left: -180px;
-    }
-
-    /* First item ("Home"). */
-    .navlinks-container a:nth-child(1) {
-        border-top: 1px solid white;
-        padding-top: 5px;
     }
 
     .main-navlinks {
@@ -291,12 +291,8 @@ nav {
         width: 100%;
     }
 
-    .open {
+    .navlinks-container.open {
         transform: translate(0%);
-    }
-
-    .hamburger.open {
-        right: 22px;
     }
 
     .navlinks-container a {
