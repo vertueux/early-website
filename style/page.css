@@ -179,7 +179,7 @@ input:focus {
     }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1450px) {
     .page {
         width: 100%;
     }

@@ -3,13 +3,11 @@ const navLinksContainer = document.querySelector(".navlinks-container")
 const search = document.querySelector('.input-group input');
 const table_rows = document.querySelectorAll('tbody tr');
 const navbar = document.querySelector("nav");
-const footer = document.querySelector("footer");
 const page = document.querySelector(".page");
 const logo = document.getElementById("logo");
 const onHomePage = document.querySelector(".on-home-page");
 
 var navOpen = false;
-var isOverlapping = false;
 var preventReopening = false;
 
 const toggleNav = () => {
@@ -26,19 +24,16 @@ const toggleNav = () => {
         navOpen = true;
     }
     if (navOpen == false) {
-        checkOverlap();
         document.body.classList.remove("stop-scrolling");
     }
     if (ariaToggle == "true") {
         // Prevent from clicking.
         page.style.setProperty('pointer-events', "none");
         page.style.setProperty('filter', "brightness(0.3)");
-        footer.style.setProperty('filter', "brightness(0.3)");
         logo.style.setProperty('filter', "brightness(0.3)");
     } else {
         page.style.setProperty('pointer-events', "auto");
         page.style.setProperty('filter', "brightness(1.0)");
-        footer.style.setProperty('filter', "brightness(1.0)");
         logo.style.setProperty('filter', "brightness(1.0)");
     }
     navLinksContainer.classList.toggle("open");
@@ -77,7 +72,6 @@ new ResizeObserver(entries => {
             page.style.setProperty('pointer-events', "none");
             document.body.classList.add("stop-scrolling");
             page.style.setProperty('filter', "brightness(0.3)");
-            footer.style.setProperty('filter', "brightness(0.3)");
             logo.style.setProperty('filter', "brightness(0.3)");
         }
     } else {
@@ -87,7 +81,6 @@ new ResizeObserver(entries => {
             document.body.classList.remove("stop-scrolling");
             page.style.setProperty('pointer-events', "auto");
             page.style.setProperty('filter', "brightness(1.0)");
-            footer.style.setProperty('filter', "brightness(1.0)");
             logo.style.setProperty('filter', "brightness(1.0)");
         }
     }
