@@ -31,6 +31,7 @@ nav {
     display: flex;
     align-items: center;
     text-decoration: none;
+    z-index: 6;
 }
 
 .nav-icon span {
@@ -203,10 +204,31 @@ nav {
 
     @keyframes slide {
         0% {
-          transform: translate(0, -100%);
+          transform: translate(0, calc(-100% + 65px)); /* 65px being the navigation bar's height. */
         }
         100% {
           transform: translate(0, 0);
+        }
+    }
+
+    @keyframes slideoff {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(0, calc(-100% + 65px));
+        }
+    }
+
+    @keyframes textappear {
+        0% {
+          opacity: 0;
+        }
+        70% {
+            opacity: 0;
+        }
+        100% {
+          opacity: 1;
         }
     }
 
@@ -215,19 +237,26 @@ nav {
         flex-direction: column;
         align-items: flex-start;
         position: absolute;
-        background: rgb(8, 8, 8);
+        background: #181818;
         width: 100%;
         top: 0;
         left: 0;
-        padding: 15px 50px 15px 200px;
+        padding: 0;
         border-left: 1px solid rgb(10, 10, 10);
         transform: translate(0, -100%);
         height: 40vh;
         z-index: 2;
     }
-
+    
     .navlinks-container a::after {
         display: none;
+    }
+    
+    .close-nav {
+        animation-name: slideoff;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
     }
 
     .navlinks-container.open {
@@ -237,14 +266,20 @@ nav {
         animation-fill-mode: forwards;
     }
 
+    .navlinks-container.open span {
+        animation-name: textappear;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }
+
     .navlinks-container a {
-        top: 50px;
+        top: 80px;
+        left: var(--margin-tiny);
         font-size: 18px;
-        margin: 2px;
         color: white;
         padding-bottom: 10px;
-        width: calc(30% + 35px);
-        margin-left: -180px;
+        width: 100%;
     }
 
     .main-navlinks {
@@ -268,14 +303,6 @@ nav {
     .nav-icon img {
         width: 30px;
     }
-
-    .nav-icon {
-        order: 2;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 }
 
 @media (max-width: 500px) {
@@ -289,10 +316,6 @@ nav {
 
     .navlinks-container { 
         width: 100%;
-    }
-
-    .navlinks-container.open {
-        transform: translate(0%);
     }
 
     .navlinks-container a {
