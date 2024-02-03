@@ -304,7 +304,7 @@ nav {
     }
     
     .navlinks-container a {
-        top: 80px;
+        top: 100px;
         left: var(--margin-tiny);
         font-size: 18px;
         color: white;

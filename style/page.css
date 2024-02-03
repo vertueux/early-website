@@ -13,8 +13,6 @@
 }
 
 #mtitle {
-    display: flex;
-    justify-content: center;
     font-family: TestSohne-Light;
     margin-top: 200px;
     margin-bottom: 40px;
@@ -191,6 +189,7 @@ input:focus {
 
     #mtitle {
         font-size: 50px;
+        margin-left: var(--margin-tiny);
     }
 }
 
