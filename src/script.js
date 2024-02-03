@@ -12,9 +12,6 @@ var navOpen = false;
 var preventReopening = false;
 
 const toggleNav = () => {
-    // Stop scrolling.
-    
-
     hamburgerToggler.classList.toggle("open")
     const ariaToggle = hamburgerToggler.getAttribute("aria-expanded") === "true" ? "false" : "true";
     hamburgerToggler.setAttribute("aria-expanded", ariaToggle)
@@ -23,9 +20,6 @@ const toggleNav = () => {
         navOpen = false;
     } else if (preventReopening == false) {
         navOpen = true;
-    }
-    if (navOpen == false) {
-        document.body.classList.remove("stop-scrolling");
     }
     if (ariaToggle == "true") {
         // Prevent from clicking.
@@ -82,7 +76,6 @@ new ResizeObserver(entries => {
             navLinksContainer.classList.add("close-nav");
             navLinksContainerSpan.classList.add("disappear");
             lastNavElem.classList.add("disappear");
-            document.body.classList.add("stop-scrolling");
             page.style.setProperty('filter', "brightness(0.3)");
         }
     } else {
@@ -92,14 +85,15 @@ new ResizeObserver(entries => {
             navLinksContainer.classList.remove("close-nav");
             navLinksContainerSpan.classList.remove("disappear");
             lastNavElem.classList.remove("disappear");
-            document.body.classList.remove("stop-scrolling");
             page.style.setProperty('pointer-events', "auto");
             page.style.setProperty('filter', "brightness(1.0)");
         }
     }
 }).observe(document.body)
 
-search.addEventListener('input', searchTable)
+if (search) {
+    search.addEventListener('input', searchTable)
+}
 
 function searchTable() {
     table_rows.forEach((row, i) => {

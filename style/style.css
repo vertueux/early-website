@@ -38,11 +38,6 @@ body {
     flex-direction: column;
 }
 
-.stop-scrolling {
-    height: 100%;
-    overflow: hidden;
-}
-
 /* For the footer. */
 .page {
     flex: 1 0 auto;
