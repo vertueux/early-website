@@ -246,32 +246,32 @@ nav {
 
     @keyframes changetodark {
         0% {
-          filter: brightness(1.0);
+          filter: brightness(1.0) blur(0px);
         }
         100% {
-            filter: brightness(0.3);
+            filter: brightness(0.3) blur(5px);
         }
     }
 
     @keyframes changetobright {
         0% {
-          filter: brightness(0.3);
+          filter: brightness(0.3) blur(5px);
         }
         100% {
-            filter: brightness(1.0);
+            filter: brightness(1.0) blur(0px);
         }
     }
 
     .change-to-dark {
         animation-name: changetodark;
-        animation-duration: 1s;
+        animation-duration: 0.5s;
         animation-timing-function: ease;
         animation-fill-mode: forwards;
     }
 
     .change-to-bright {
         animation-name: changetobright;
-        animation-duration: 1s;
+        animation-duration: 0.5s;
         animation-timing-function: ease;
         animation-fill-mode: forwards;
     }
@@ -298,7 +298,7 @@ nav {
     
     .navlinks-container.open span {
         animation-name: textappear;
-        animation-duration: 1s;
+        animation-duration: 0.5s;
         animation-timing-function: ease;
         animation-fill-mode: forwards;
     }
@@ -314,21 +314,21 @@ nav {
 
     .close-nav {
         animation-name: slideoff;
-        animation-duration: 1s;
+        animation-duration: 0.5s;
         animation-timing-function: ease;
         animation-fill-mode: forwards;
     }
 
     .disappear {
         animation-name: textdisappear;
-        animation-duration: 1s;
+        animation-duration: 0.5s;
         animation-timing-function: ease;
         animation-fill-mode: forwards;
     }
 
     .navlinks-container.open {
         animation-name: slide;
-        animation-duration: 1s;
+        animation-duration: 0.5s;
         animation-timing-function: ease;
         animation-fill-mode: forwards;
     }
