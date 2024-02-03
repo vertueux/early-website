@@ -244,6 +244,38 @@ nav {
         }
     }
 
+    @keyframes changetodark {
+        0% {
+          filter: brightness(1.0);
+        }
+        100% {
+            filter: brightness(0.3);
+        }
+    }
+
+    @keyframes changetobright {
+        0% {
+          filter: brightness(0.3);
+        }
+        100% {
+            filter: brightness(1.0);
+        }
+    }
+
+    .change-to-dark {
+        animation-name: changetodark;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }
+
+    .change-to-bright {
+        animation-name: changetobright;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }
+
     .navlinks-container {
         display: flex;
         flex-direction: column;

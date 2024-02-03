@@ -17,6 +17,11 @@ const toggleNav = () => {
     hamburgerToggler.setAttribute("aria-expanded", ariaToggle)
     if (navOpen == true) {
         // Closing the navbar.
+        navLinksContainer.classList.add("close-nav");
+        navLinksContainerSpan.classList.add("disappear");
+        lastNavElem.classList.add("disappear");
+        page.classList.add("change-to-bright");
+        page.classList.remove("change-to-dark");
         navOpen = false;
     } else if (preventReopening == false) {
         navOpen = true;
@@ -24,10 +29,10 @@ const toggleNav = () => {
     if (ariaToggle == "true") {
         // Prevent from clicking.
         page.style.setProperty('pointer-events', "none");
-        page.style.setProperty('filter', "brightness(0.3)");
+        page.classList.add("change-to-dark");
+        page.classList.remove("change-to-bright");
     } else {
         page.style.setProperty('pointer-events', "auto");
-        page.style.setProperty('filter', "brightness(1.0)");
     }
     navLinksContainer.classList.toggle("open");
 }
@@ -40,6 +45,8 @@ function closeNav() {
     navLinksContainer.classList.add("close-nav");
     navLinksContainerSpan.classList.add("disappear");
     lastNavElem.classList.add("disappear");
+    page.classList.add("change-to-bright");
+    page.classList.remove("change-to-dark");
     toggleNav();
     preventReopening = false;
 }
@@ -76,7 +83,8 @@ new ResizeObserver(entries => {
             navLinksContainer.classList.add("close-nav");
             navLinksContainerSpan.classList.add("disappear");
             lastNavElem.classList.add("disappear");
-            page.style.setProperty('filter', "brightness(0.3)");
+            page.classList.add("change-to-dark");
+            page.classList.remove("change-to-bright");
         }
     } else {
         navLinksContainer.style.transition = "none";
@@ -86,7 +94,8 @@ new ResizeObserver(entries => {
             navLinksContainerSpan.classList.remove("disappear");
             lastNavElem.classList.remove("disappear");
             page.style.setProperty('pointer-events', "auto");
-            page.style.setProperty('filter', "brightness(1.0)");
+            page.classList.add("change-to-bright");
+            page.classList.remove("change-to-dark");
         }
     }
 }).observe(document.body)
