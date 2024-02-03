@@ -1,5 +1,7 @@
-const hamburgerToggler = document.querySelector(".hamburger")
-const navLinksContainer = document.querySelector(".navlinks-container")
+const hamburgerToggler = document.querySelector(".hamburger");
+const navLinksContainer = document.querySelector(".navlinks-container");
+const navLinksContainerSpan = document.querySelector(".navlinks-container span");
+const lastNavElem = document.getElementById("lastnavelem");
 const search = document.querySelector('.input-group input');
 const table_rows = document.querySelectorAll('tbody tr');
 const navbar = document.querySelector("nav");
@@ -11,7 +13,7 @@ var preventReopening = false;
 
 const toggleNav = () => {
     // Stop scrolling.
-    document.body.classList.add("stop-scrolling");
+    
 
     hamburgerToggler.classList.toggle("open")
     const ariaToggle = hamburgerToggler.getAttribute("aria-expanded") === "true" ? "false" : "true";
@@ -19,7 +21,6 @@ const toggleNav = () => {
     if (navOpen == true) {
         // Closing the navbar.
         navOpen = false;
-        navLinksContainer.classList.add("close-nav");
     } else if (preventReopening == false) {
         navOpen = true;
     }
@@ -42,9 +43,19 @@ hamburgerToggler.addEventListener("click", toggleNav);
 function closeNav() {
     preventReopening = true;
     navOpen = false;
+    navLinksContainer.classList.add("close-nav");
+    navLinksContainerSpan.classList.add("disappear");
+    lastNavElem.classList.add("disappear");
     toggleNav();
     preventReopening = false;
 }
+
+window.onscroll = function () { 
+    if (navOpen == true) {
+        closeNav();
+    }
+};
+
 
 document.addEventListener("click", (evt) => {
     var w = window.innerWidth;
@@ -69,6 +80,8 @@ new ResizeObserver(entries => {
             navLinksContainer.style.setProperty('display', "block");
             page.style.setProperty('pointer-events', "none");
             navLinksContainer.classList.add("close-nav");
+            navLinksContainerSpan.classList.add("disappear");
+            lastNavElem.classList.add("disappear");
             document.body.classList.add("stop-scrolling");
             page.style.setProperty('filter', "brightness(0.3)");
         }
@@ -77,6 +90,8 @@ new ResizeObserver(entries => {
         if (navOpen == true) {
             navLinksContainer.style.setProperty('display', "none");
             navLinksContainer.classList.remove("close-nav");
+            navLinksContainerSpan.classList.remove("disappear");
+            lastNavElem.classList.remove("disappear");
             document.body.classList.remove("stop-scrolling");
             page.style.setProperty('pointer-events', "auto");
             page.style.setProperty('filter', "brightness(1.0)");
