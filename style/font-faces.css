@@ -1,45 +1,9 @@
 @font-face {
-    font-family: TestSignifier;
-    src: url("../assets/3rd-party/signifier/TestSignifier-Regular.otf") format("opentype");
+    font-family: NotoSerifJP-Medium;
+    src: url("../assets/3rd-party/Noto_Serif_JP/NotoSerifJP-Medium.otf") format("opentype");
 }
 
 @font-face {
-    font-family: TestSignifier-Light;
-    src: url("../assets/3rd-party/signifier/TestSignifier-Light.otf") format("opentype");
-}
-
-@font-face {
-    font-family: TestSignifier-ExtraLight;
-    src: url("../assets/3rd-party/signifier/TestSignifier-Extralight.otf") format("opentype");
-}
-
-@font-face {
-    font-family: TestSignifier-Thin;
-    src: url("../assets/3rd-party/signifier/TestSignifier-Thin.otf") format("opentype");
-}
-
-
-@font-face {
-    font-family: TestSignifier-Bold;
-    font-weight: bold;
-    src: url("../assets/3rd-party/signifier/TestSignifier-Bold.otf") format("opentype");
-}
-
-@font-face {
-    font-family: TestSohne;
-    font-weight: bold;
-    src: url("../assets/3rd-party/sohne/TestSöhne-Dreiviertelfett.otf") format("opentype");
-}
-
-@font-face {
-    font-family: TestSohne-Bold;
-    font-weight: bold;
-    src: url("../assets/3rd-party/sohne/TestSöhne-Dreiviertelfett.otf") format("opentype");
-}
-
-@font-face {
-    font-family: TestSohne-Light;
-    font-weight: bold;
-    /*src: url("../assets/3rd-party/sohne/TestSöhne-Leicht.otf") format("opentype");*/
-    src: url("../assets/3rd-party/sohne/TestSöhne-Buch.otf") format("opentype");
+    font-family: Montserrat;
+    src: url("../assets/3rd-party/Montserrat/Montserrat-VariableFont_wght.ttf") format("opentype");
 }

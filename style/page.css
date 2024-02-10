@@ -13,7 +13,9 @@
 }
 
 #mtitle {
-    font-family: TestSohne-Light;
+    font-family: Montserrat;
+    font-weight: 500;
+    letter-spacing: -2px;
     margin-top: 200px;
     margin-bottom: 40px;
     font-size: 60px;
@@ -147,12 +149,10 @@ input:focus {
 ::placeholder {
     color: rgb(159, 159, 159);
     opacity: 1; /* Firefox. */
-    font-family: TestSohne-Light;
 }
   
 ::-ms-input-placeholder { /* Edge 12 -18. */
     color: rgb(159, 159, 159);
-    font-family: TestSohne-Light;
 }
 
 .input-group input {
