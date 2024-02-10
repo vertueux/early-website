@@ -216,7 +216,7 @@ nav {
             transform: translate(0, 0);
         }
         100% {
-            transform: translate(0, calc(-100% + 65px));
+            transform: translate(0, calc(-100%)); /* Putting 100% to not underlap then navbar (and so, remove the blur effect). */
         }
     }
 
