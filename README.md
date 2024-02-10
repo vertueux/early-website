@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="assets/banner.png">
+  <img src="assets/images/banner.png">
 </h1>
 
 This is the public directory for my website, which is hosted on GitHub. This is a website on which various articles are published in certain fields and sub-fields of science and philosophy. 
