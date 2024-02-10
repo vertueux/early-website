@@ -119,7 +119,7 @@ nav {
     transform: scaleX(0.8);
 }
 
-/* Depending on the media. Don't forget to modifiy script.js when 'max-width' is modified.*/
+/* Depending on the media. Don't forget to modify index.js when 'max-width' is modified.*/
 @media (max-width: 1450px) {
     .navlinks-container a {
         margin: 0 10px;
