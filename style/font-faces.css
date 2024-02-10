@@ -1,9 +1,9 @@
 @font-face {
     font-family: NotoSerifJP-Medium;
-    src: url("../assets/3rd-party/Noto_Serif_JP/NotoSerifJP-Medium.otf") format("opentype");
+    src: url("../3rd-party/Noto_Serif_JP/NotoSerifJP-Medium.otf") format("opentype");
 }
 
 @font-face {
     font-family: Montserrat;
-    src: url("../assets/3rd-party/Montserrat/Montserrat-VariableFont_wght.ttf") format("opentype");
+    src: url("../3rd-party/Montserrat/Montserrat-VariableFont_wght.ttf") format("opentype");
 }
