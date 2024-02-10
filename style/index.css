@@ -1,24 +1,7 @@
 @import url("font-faces.css");
 @import url("navbar.css");
-/*@import url("scrollbar.css");*/ /* Currently hiding the scrollbar.*/ 
+@import url("scrollbar.css");
 @import url("page.css");
-
-/* == This code hides the scroll bar. == */
-html {
-    overflow: scroll;
-    overflow-x: hidden;
-}
-
-::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-}
-
-/* Optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-    background: #191919;
-}
-/* ===================================== */
 
 ::-moz-selection { /* Code for Firefox. */
     color: white;
