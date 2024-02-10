@@ -170,6 +170,18 @@ input:focus {
     font-size: 18px;
 }
 
+.articles button p {
+    color: white;
+}
+
+.articles button {
+    background-color: #1f883d;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: solid 1px black;
+    cursor: pointer;
+}
+
 @media (max-height: 1000px) {
     .page {
         height: max-content;
