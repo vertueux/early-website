@@ -309,7 +309,6 @@ nav {
         font-size: 18px;
         color: white;
         padding-bottom: 10px;
-        width: 100%;
     }
 
     .close-nav {
@@ -373,9 +372,5 @@ nav {
 
     .navlinks-container { 
         width: 100%;
-    }
-
-    .navlinks-container a {
-        width: 90vw;
     }
 }
