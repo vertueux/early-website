@@ -247,19 +247,19 @@ nav {
 
     @keyframes changetodark {
         0% {
-          filter: brightness(1.0) blur(0px);
+          filter: blur(0px);
         }
         100% {
-            filter: brightness(0.3) blur(5px);
+            filter: blur(8px);
         }
     }
 
     @keyframes changetobright {
         0% {
-          filter: brightness(0.3) blur(5px);
+          filter: blur(8px);
         }
         100% {
-            filter: brightness(1.0) blur(0px);
+            filter: blur(0px);
         }
     }
 
