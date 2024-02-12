@@ -1,7 +1,7 @@
 const hamburgerToggler = document.querySelector(".hamburger");
 const navLinksContainer = document.querySelector(".navlinks-container");
 const navLinksContainerSpan = document.querySelector(".navlinks-container span");
-const lastNavElem = document.getElementById("lastnavelem");
+const lastNavLink = document.getElementById("last-navlink");
 const search = document.querySelector('.input-group input');
 const table_rows = document.querySelectorAll('tbody tr');
 const navbar = document.querySelector("nav");
@@ -19,7 +19,7 @@ const toggleNav = () => {
         // Closing the navbar.
         navLinksContainer.classList.add("close-nav");
         navLinksContainerSpan.classList.add("disappear");
-        lastNavElem.classList.add("disappear");
+        lastNavLink.classList.add("disappear");
         page.classList.add("change-to-bright");
         page.classList.remove("change-to-dark");
         navOpen = false;
@@ -44,7 +44,7 @@ function closeNav() {
     navOpen = false;
     navLinksContainer.classList.add("close-nav");
     navLinksContainerSpan.classList.add("disappear");
-    lastNavElem.classList.add("disappear");
+    lastNavLink.classList.add("disappear");
     page.classList.add("change-to-bright");
     page.classList.remove("change-to-dark");
     toggleNav();
@@ -82,7 +82,7 @@ new ResizeObserver(entries => {
             page.style.setProperty('pointer-events', "none");
             navLinksContainer.classList.add("close-nav");
             navLinksContainerSpan.classList.add("disappear");
-            lastNavElem.classList.add("disappear");
+            lastNavLink.classList.add("disappear");
             page.classList.add("change-to-dark");
             page.classList.remove("change-to-bright");
         }
@@ -92,7 +92,7 @@ new ResizeObserver(entries => {
             navLinksContainer.style.setProperty('display', "none");
             navLinksContainer.classList.remove("close-nav");
             navLinksContainerSpan.classList.remove("disappear");
-            lastNavElem.classList.remove("disappear");
+            lastNavLink.classList.remove("disappear");
             page.style.setProperty('pointer-events', "auto");
             page.classList.add("change-to-bright");
             page.classList.remove("change-to-dark");
