@@ -20,7 +20,7 @@ nav {
     backdrop-filter: blur(5px);
     z-index: 4;
     border-bottom: solid 1px black;
-    box-shadow: 0 3px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .2);
 }
 
 
@@ -130,7 +130,7 @@ nav {
         display: inline-block;
         position: relative;
     }
-    
+
     .nav-external-link {
         margin-left: auto;
     }
@@ -140,7 +140,7 @@ nav {
         position: fixed;
         width: 100%;
 
-        /* Fixing the nav margin. */ 
+        /* Fixing the nav margin. */
         margin-left: auto;
         margin-right: auto;
     }
@@ -166,7 +166,7 @@ nav {
         align-items: center;
         right: var(--margin-tiny);
         top: 25px;
-        z-index: 3; 
+        z-index: 3;
     }
 
     .hamburger span {
@@ -205,10 +205,12 @@ nav {
 
     @keyframes slide {
         0% {
-          transform: translate(0, calc(-100% + 65px)); /* 65px being the navigation bar's height. */
+            transform: translate(0, calc(-100% + 65px));
+            /* 65px being the navigation bar's height. */
         }
+
         100% {
-          transform: translate(0, 0);
+            transform: translate(0, 0);
         }
     }
 
@@ -216,39 +218,46 @@ nav {
         0% {
             transform: translate(0, 0);
         }
+
         100% {
-            transform: translate(0, calc(-100%)); /* Putting 100% to not underlap then navbar (and so, remove the blur effect). */
+            transform: translate(0, calc(-100%));
+            /* Putting 100% to not underlap then navbar (and so, remove the blur effect). */
         }
     }
 
     @keyframes textappear {
         0% {
-          opacity: 0;
+            opacity: 0;
         }
+
         70% {
             opacity: 0;
         }
+
         100% {
-          opacity: 1;
+            opacity: 1;
         }
     }
 
     @keyframes textdisappear {
         0% {
-          opacity: 1;
+            opacity: 1;
         }
+
         30% {
             opacity: 0;
         }
+
         100% {
-          opacity: 0;
+            opacity: 0;
         }
     }
 
     @keyframes changetodark {
         0% {
-          filter: blur(0px);
+            filter: blur(0px);
         }
+
         100% {
             filter: blur(8px);
         }
@@ -256,8 +265,9 @@ nav {
 
     @keyframes changetobright {
         0% {
-          filter: blur(8px);
+            filter: blur(8px);
         }
+
         100% {
             filter: blur(0px);
         }
@@ -292,18 +302,18 @@ nav {
         height: 200px;
         z-index: 2;
     }
-    
+
     .navlinks-container a::after {
         display: none;
     }
-    
+
     .navlinks-container.open span {
         animation-name: textappear;
         animation-duration: 0.5s;
         animation-timing-function: ease;
         animation-fill-mode: forwards;
     }
-    
+
     .navlinks-container a {
         top: 100px;
         left: var(--margin-tiny);

@@ -51,7 +51,7 @@ function closeNav() {
     preventReopening = false;
 }
 
-window.onscroll = function () { 
+window.onscroll = function () {
     if (navOpen == true) {
         closeNav();
     }
@@ -61,9 +61,9 @@ window.onscroll = function () {
 document.addEventListener("click", (evt) => {
     var w = window.innerWidth;
     if (w <= 1450) {
-        let targetEl = evt.target;    
+        let targetEl = evt.target;
         do {
-            if(targetEl == navLinksContainer || targetEl == hamburgerToggler) {
+            if (targetEl == navLinksContainer || targetEl == hamburgerToggler) {
                 return;
             }
             targetEl = targetEl.parentNode;
@@ -108,18 +108,18 @@ function searchTable() {
     table_rows.forEach((row, i) => {
         let table_data = row.textContent.toLowerCase(),
             search_data = search.value.toLowerCase();
-            row.classList.toggle('hide', table_data.indexOf(search_data) < 0);
-            row.style.setProperty('--delay', i/25 + 's');
+        row.classList.toggle('hide', table_data.indexOf(search_data) < 0);
+        row.style.setProperty('--delay', i / 25 + 's');
     })
 }
 
 function searchTableEnter(event) {
-    if (event.keyCode === 13) { 
+    if (event.keyCode === 13) {
         table_rows.forEach((row, i) => {
             let table_data = row.textContent.toLowerCase(),
                 search_data = search.value.toLowerCase();
-                row.classList.toggle('hide', table_data.indexOf(search_data) < 0);
-                row.style.setProperty('--delay', i/25 + 's');
+            row.classList.toggle('hide', table_data.indexOf(search_data) < 0);
+            row.style.setProperty('--delay', i / 25 + 's');
         })
     }
 }

@@ -3,25 +3,29 @@
 @import url("scrollbar.css");
 @import url("page.css");
 
-::-moz-selection { /* Code for Firefox. */
+::-moz-selection {
+    /* Code for Firefox. */
     color: white;
     background: black;
 }
-  
+
 ::selection {
     color: white;
     background: black;
 }
 
-img::-moz-selection { /* Code for Firefox. */
+img::-moz-selection {
+    /* Code for Firefox. */
     background: transparent;
 }
-  
+
 img::selection {
     background: transparent;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
