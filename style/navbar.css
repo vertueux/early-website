@@ -350,8 +350,6 @@ nav {
     .nav-external-link {
         order: 3;
         margin-left: 0;
-
-        /* Temporal. */
         display: none;
     }
 }
