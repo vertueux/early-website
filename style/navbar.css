@@ -20,8 +20,6 @@ nav {
     background-color: rgba(0, 0, 0, 0.9);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    border-bottom: solid 1px black;
-    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .2);
     z-index: 4;
 }
 
@@ -207,7 +205,7 @@ nav {
 
     @keyframes slide {
         0% {
-            height: 0px;
+            height: 5px;
         }
 
         100% {
@@ -221,7 +219,7 @@ nav {
         }
 
         100% {
-            height: 0px;
+            height: 5px;
         }
     }
 
@@ -293,14 +291,15 @@ nav {
         align-items: flex-start;
         position: absolute;
         background-color: rgba(0, 0, 0, 0.9);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
         width: 100%;
         top: 0;
         left: 0;
         padding: 0;
         transform: translate(0, var(--navbar-height));
-        border-bottom: solid 1px black;
         box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .2);
-        height: 0px;
+        height: 5px;
         overflow: hidden;
         z-index: 5;
     }
@@ -317,8 +316,8 @@ nav {
     }
 
     .navlinks-container a {
-        top: calc((var(--mobile-nav-element-height) / 4) + (var(--mobile-nav-element-height) / 8)); /* 37.5px = 37.5%. */
-        left: var(--margin-tiny);
+        margin-top: 10px;
+        margin-left: var(--margin-tiny);
         font-size: 18px;
         color: white;
         padding: 0;
