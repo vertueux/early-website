@@ -20,6 +20,7 @@ nav {
     background-color: rgba(0, 0, 0, 0.9);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .2);
     z-index: 4;
 }
 
@@ -143,6 +144,9 @@ nav {
         /* Fixing the nav margin. */
         margin-left: auto;
         margin-right: auto;
+
+        /* Switching the box shadow to navlinks-container. */
+        box-shadow: none;
     }
 
     .nav-icon {
