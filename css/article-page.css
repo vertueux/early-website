@@ -17,6 +17,7 @@
     display: inline-block;
     font-family: NotoSerifJP-Medium;
     font-size: 54px;
+    font-weight: 100;
     vertical-align: top;
 }
 
@@ -76,6 +77,7 @@
 .pub-info h1 {
     font-size: 30px;
     font-family: Montserrat;
+    font-weight: 600;
     margin-bottom: 15px;
 }
 
@@ -103,7 +105,7 @@
 
 #author {
     font-family: Montserrat;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 #authorname {
