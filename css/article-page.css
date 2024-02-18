@@ -1,0 +1,232 @@
+:root {
+    --margin-tiny: 4%;
+    --page-width: 1300px;
+    --padding-left-from-page: 230px;
+}
+
+.page {
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    width: var(--page-width);
+    background-color: white;
+    height: 100vh;
+}
+
+#ptitle {
+    display: inline-block;
+    font-family: NotoSerifJP-Medium;
+    font-size: 54px;
+    vertical-align: top;
+}
+
+#ptype {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.intro {
+    display: inline-block;
+    margin-top: 200px;
+    vertical-align: top;
+    padding-left: var(--padding-left-from-page);
+    padding-bottom: 100px;
+}
+
+.breakline {
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.info-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.info-container span {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    position: relative;
+}
+
+.info-container img {
+    width: 15px;
+    height: 15px;
+    margin-top: -4px;
+    vertical-align: middle;
+}
+
+.info-container a span {
+    color: white;
+}
+
+#readpaper {
+    position: absolute;
+    left: 0px;
+    margin-left: var(--padding-left-from-page);
+}
+
+.pub-info {
+    margin-top: 80px;
+    margin-left: var(--padding-left-from-page);
+}
+
+.pub-info h1 {
+    font-size: 30px;
+    font-family: Montserrat;
+    margin-bottom: 15px;
+}
+
+.pub-info p {
+    font-family: NotoSerifJP-Regular;
+    font-size: 20px;
+    font-weight: 50;
+    letter-spacing: 0;
+    width: calc(var(--page-width) - 2*var(--padding-left-from-page));
+    padding-bottom: 160px;
+}
+
+.credits-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.credits-container span {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    position: relative;
+}
+
+#author {
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+#authorname {
+    font-family: Montserrat;
+    position: absolute;
+    left: 0px;
+    margin-left: var(--padding-left-from-page);
+}
+
+.info-container button {
+    background-color: #191919;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+@media (max-height: 1000px) {
+    .page {
+        height: max-content;
+        padding-bottom: 200px;
+    }
+}
+
+
+@media (max-width: 1450px) {
+
+    /* This has to be set to page's width with a tiny gap (+150px in this case).*/
+    .page {
+        width: 100%;
+    }
+
+    .intro {
+        padding-left: var(--margin-tiny);
+    }
+
+    .breakline {
+        margin-left: var(--margin-tiny);
+        width: calc(100% - 2*(var(--margin-tiny)));
+    }
+
+    #date {
+        margin-left: var(--margin-tiny);
+    }
+
+    #readpaper {
+        margin-left: var(--margin-tiny);
+        margin-top: 30px;
+    }
+
+    #author {
+        margin-left: var(--margin-tiny);
+    }
+
+    #authorname {
+        margin-left: var(--margin-tiny);
+        margin-top: 30px;
+    }
+
+    .pub-info {
+        margin-left: calc(var(--margin-tiny));
+    }
+
+    .pub-info p {
+        width: calc(100% - var(--margin-tiny));
+    }
+
+    #ptitle {
+        font-size: 44px;
+    }
+
+    .pub-info h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .pub-info p {
+        width: calc(100% - 2*(var(--margin-tiny)));
+    }
+}
+
+@media (max-width: 800px) {
+    #ptitle {
+        font-size: 34px;
+    }
+
+    .info-container span {
+        font-size: 17px;
+    }
+
+    .credits-container span {
+        font-size: 17px;
+    }
+
+    .pub-info p {
+        font-size: 17px;
+    }
+
+    .pub-info h1 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 600px) {
+    #ptitle {
+        font-size: 33px;
+    }
+
+    .info-container span {
+        font-size: 16px;
+    }
+
+    .credits-container span {
+        font-size: 16px;
+    }
+
+    .pub-info p {
+        font-size: 16px;
+    }
+
+    .pub-info h1 {
+        font-size: 24px;
+    }
+}
