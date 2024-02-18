@@ -4,9 +4,7 @@ const navLinksContainerSpan = document.querySelector(".navlinks-container span")
 const lastNavLink = document.getElementById("last-navlink");
 const search = document.querySelector('.input-group input');
 const table_rows = document.querySelectorAll('tbody tr');
-const navbar = document.querySelector("nav");
 const page = document.querySelector(".page");
-const onHomePage = document.querySelector(".on-home-page");
 
 var navOpen = false;
 var preventReopening = false;
