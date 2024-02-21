@@ -381,4 +381,8 @@ nav {
     .hamburger {
         top: 20px;
     }
+
+    .hamburger span {
+        height: 1px;
+    }
 }
