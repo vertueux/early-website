@@ -19,7 +19,7 @@ nav {
     left: 50%;
     transform: translate(-50%, 0);
     background-color: white;
-    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .2);
     z-index: 4;
 }
 
