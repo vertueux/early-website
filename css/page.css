@@ -59,6 +59,7 @@ td img {
 tr {
     display: flex;
     position: relative;
+    align-items: center;
     flex-direction: column;
     height: 230px;
     width: var(--page-width);
