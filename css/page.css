@@ -144,6 +144,7 @@ tbody tr.hide td p {
 }
 
 .articles-title p {
+    font-family: NotoSerifJP-Medium;
     font-size: 28px;
 }
 
@@ -165,7 +166,7 @@ tbody tr.hide td p {
 
 .articles {
     position: absolute;
-    margin-left: 20px;
+    margin-left: 35px;
     margin-top: 150px;
     width: 100%;
 }
@@ -245,6 +246,32 @@ tbody tr.hide td p {
 
     #mtitle {
         font-size: 38px;
+    }
+
+    .articles-title p {
+        font-size: 24px;
+    }
+
+    .articles-title p {
+        font-size: 24px;
+    }
+
+    .articles button p {
+        font-size: 15px;
+    }
+
+    .articles-date p {
+        font-size: 14px;
+    }
+
+    .articles-type p {
+        font-size: 14px;
+    }
+
+    #mtitle {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
     }
 }
 
