@@ -28,7 +28,6 @@ table {
 
 main.table {
     background-color: transparent;
-    margin-top: 10px;
     margin-bottom: 350px;
 }
 
@@ -40,9 +39,7 @@ main.table {
 table,
 th,
 td {
-    border-collapse: collapse;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+    border-collapse: separate; 
 }
 
 thead th {
@@ -59,16 +56,21 @@ td img {
 }
 
 /* Styling. */
-tbody tr {
-    border-top: 1px solid black;
+tr {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 230px;
+    width: var(--page-width);
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+    outline: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-.articles:nth-last-child(-n + 1) {
-    text-align: right;
-}
-
-.articles:nth-child(1) {
-    text-align: left;
+#ftr {
+    display: none;
 }
 
 /* Links. */
@@ -117,8 +119,68 @@ tbody tr td img {
 tbody tr.hide td,
 tbody tr.hide td p {
     padding: 0;
-    font: 0 / 0 TestSohne-Light;
     transition: .2s ease-in-out;
+}
+
+.articles-date p,
+.articles-title p,
+.articles-type p,
+.articles-description p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.articles-date {
+    position: absolute;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.articles-title {
+    position: absolute;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.articles-title p {
+    font-size: 28px;
+}
+
+.articles-description {
+    position: absolute;
+    margin-top: 90px;
+    width: 100%;
+}
+
+.articles-description p {
+    font-size: 15px;
+}
+
+.articles-type {
+    position: absolute;
+    margin-top: 190px;
+    width: 100%;
+}
+
+.articles {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 150px;
+    width: 100%;
+}
+
+.articles button p {
+    color: white;
+    font-size: 18px;
+}
+
+.articles button {
+    background-color: #191919;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
 }
 
 .input-group {
@@ -139,26 +201,9 @@ tbody tr.hide td p {
     font-size: 18px;
     height: 50px;
     background-color: white;
-    border-radius: 10px;
     border: 1px solid rgb(184, 184, 184);
-    box-shadow: none;
-}
-
-.articles p {
-    font-size: 18px;
-}
-
-.articles button p {
-    color: white;
-}
-
-.articles button {
-    background-color: #191919;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
-    padding: 5px 10px;
-    border: none;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    cursor: pointer;
 }
 
 @media (max-height: 1000px) {
@@ -182,19 +227,17 @@ tbody tr.hide td p {
         font-size: 48px;
         margin-left: var(--margin-tiny);
     }
-}
 
-@media (max-width: 1000px) {
-    td:nth-child(1) {
+    tr {
+        width: 100%;
+    }
+
+    .articles-description {
         display: none;
     }
 }
 
 @media (max-width: 800px) {
-    td:nth-child(3) {
-        display: none;
-    }
-
     .search__button {
         display: none;
     }
@@ -205,10 +248,6 @@ tbody tr.hide td p {
 }
 
 @media (max-width: 600px) {
-    .articles p {
-        font-size: 15px;
-    }
-
     #mtitle {
         font-size: 32px;
     }
