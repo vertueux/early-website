@@ -82,9 +82,10 @@
 }
 
 .pub-info p {
-    font-family: NotoSerifJP-Regular;
-    font-size: 18px;
-    font-weight: 50;
+    font-family: Montserrat;
+    color: #323232;
+    font-size: 15px;
+    font-weight: 400;
     letter-spacing: 0;
     width: calc(var(--page-width) - 2*var(--padding-left-from-page));
     padding-bottom: 160px;
@@ -226,7 +227,7 @@
     }
 
     .pub-info p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .pub-info h1 {
