@@ -9,20 +9,20 @@
     margin-left: auto;
     position: relative;
     width: var(--page-width);
-    background-color: white;
+    background-color: #f4f4f4;
     height: 100vh;
 }
 
 #ptitle {
     display: inline-block;
     font-family: NotoSerifJP-Medium;
-    font-size: 54px;
+    font-size: 48px;
     font-weight: 100;
     vertical-align: top;
 }
 
 #ptype {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 500;
 }
 
@@ -36,7 +36,7 @@
 
 .breakline {
     width: 100%;
-    border-top: 1px solid black;
+    border-top: 1px solid rgb(18, 18, 18);
 }
 
 .info-container {
@@ -45,7 +45,7 @@
 }
 
 .info-container span {
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     color: black;
     display: inline-block;
@@ -60,7 +60,7 @@
 }
 
 .info-container a span {
-    color: white;
+    color: black;
 }
 
 #readpaper {
@@ -75,7 +75,7 @@
 }
 
 .pub-info h1 {
-    font-size: 30px;
+    font-size: 28px;
     font-family: Montserrat;
     font-weight: 600;
     margin-bottom: 15px;
@@ -83,7 +83,7 @@
 
 .pub-info p {
     font-family: NotoSerifJP-Regular;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 50;
     letter-spacing: 0;
     width: calc(var(--page-width) - 2*var(--padding-left-from-page));
@@ -96,7 +96,7 @@
 }
 
 .credits-container span {
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     color: black;
     display: inline-block;
@@ -116,11 +116,12 @@
 }
 
 .info-container button {
-    background-color: #191919;
+    background-color: #ffffff;
     border-radius: 10px;
+    border: 1px solid black;
+    border-color: #000000;
     padding: 5px 10px;
-    border: none;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
 }
 
@@ -175,11 +176,11 @@
     }
 
     #ptitle {
-        font-size: 44px;
+        font-size: 40px;
     }
 
     .pub-info h1 {
-        font-size: 28px;
+        font-size: 26px;
     }
 }
 
@@ -191,19 +192,19 @@
 
 @media (max-width: 800px) {
     #ptitle {
-        font-size: 34px;
+        font-size: 32px;
     }
 
     .info-container span {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .credits-container span {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .pub-info p {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .pub-info h1 {
@@ -213,15 +214,15 @@
 
 @media (max-width: 600px) {
     #ptitle {
-        font-size: 33px;
+        font-size: 29px;
     }
 
     .info-container span {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .credits-container span {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .pub-info p {
