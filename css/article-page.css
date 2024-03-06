@@ -9,7 +9,7 @@
     margin-left: auto;
     position: relative;
     width: var(--page-width);
-    background-color: #f4f4f4;
+    background-color: white;
     height: 100vh;
 }
 
