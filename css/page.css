@@ -8,17 +8,19 @@
     margin-left: auto;
     position: relative;
     width: var(--page-width);
-    background-color: white;
+    background-color: #f4f4f4;
     height: 100vh;
 }
 
 #mtitle {
+    display: flex;
+    justify-content: center;
     font-family: Montserrat;
     font-weight: 500;
     letter-spacing: -2px;
     margin-top: 200px;
     margin-bottom: 40px;
-    font-size: 58px;
+    font-size: 54px;
     vertical-align: top;
 }
 
@@ -62,11 +64,10 @@ tr {
     align-items: center;
     flex-direction: column;
     height: 230px;
-    width: var(--page-width);
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #ffffff;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
-    outline: 1px solid gray;
-    border-radius: 10px;
     margin-bottom: 20px;
 }
 
@@ -144,7 +145,7 @@ tbody tr.hide td p {
 }
 
 .articles-title p {
-    font-family: NotoSerifJP-Medium;
+    font-family: Montserrat;
     font-size: 28px;
 }
 
@@ -186,15 +187,16 @@ tbody tr.hide td p {
 }
 
 .input-group {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
     height: auto;
     background-color: transparent;
     padding: 0 0;
-    display: flex;
     margin-bottom: 90px;
-    display: flex;
-    justify-content: center;
 }
 
 .input-group input {
@@ -204,8 +206,12 @@ tbody tr.hide td p {
     height: 50px;
     background-color: white;
     border: 1px solid rgb(184, 184, 184);
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 10px;
+    padding-left: 25px;
+    text-indent: 17px;
+    background-image: url("../images/buttons/search-black.png");
+    background-size: 17px;
+    background-repeat: no-repeat;
+    background-position: 13px 15px;
 }
 
 @media (max-height: 1000px) {
@@ -226,12 +232,7 @@ tbody tr.hide td p {
     }
 
     #mtitle {
-        font-size: 48px;
-        margin-left: var(--margin-tiny);
-    }
-
-    tr {
-        width: 100%;
+        font-size: 46px;
     }
 
     .articles-description {
@@ -245,7 +246,7 @@ tbody tr.hide td p {
     }
 
     #mtitle {
-        font-size: 38px;
+        font-size: 36px;
     }
 
     .articles-title p {
@@ -267,16 +268,18 @@ tbody tr.hide td p {
     .articles-type p {
         font-size: 14px;
     }
-
-    #mtitle {
-        margin-left: 0;
-        display: flex;
-        align-items: center;
-    }
 }
 
 @media (max-width: 600px) {
     #mtitle {
-        font-size: 32px;
+        font-size: 30px;
+    }
+
+    .input-group {
+        width: 100%;
+    }
+
+    tr {
+        width: 100%;
     }
 }
