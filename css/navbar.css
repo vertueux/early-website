@@ -59,6 +59,7 @@ nav {
     color: black;
     display: inline-block;
     position: relative;
+    font-weight: 500;
 }
 
 .visit-website a:nth-child(1) {
@@ -96,6 +97,7 @@ nav {
     text-decoration: none;
     color: black;
     display: inline-block;
+    font-weight: 500;
     position: relative;
 }
 
@@ -317,10 +319,13 @@ nav {
         animation-fill-mode: forwards;
     }
 
+    .navlinks-container span {
+        font-size: 20px;
+    }
+
     .navlinks-container a {
         margin-top: 25px;
         margin-left: var(--margin-tiny);
-        font-size: 18px;
         color: black;
         padding: 0;
     }
