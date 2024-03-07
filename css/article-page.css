@@ -23,7 +23,9 @@
 
 #ptype {
     font-size: 13px;
-    font-weight: 500;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #2e2e2e;
 }
 
 .intro {
