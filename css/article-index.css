@@ -16,6 +16,11 @@ body {
     font-family: Montserrat;
     letter-spacing: -1px;
     font-weight: 450;
+
     overflow-x: hidden;
-    background: white;
+    background-color: white;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }

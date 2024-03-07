@@ -90,6 +90,7 @@
     font-weight: 400;
     letter-spacing: 0;
     width: calc(var(--page-width) - 2*var(--padding-left-from-page));
+    padding-right: var(--margin-tiny);
     padding-bottom: 160px;
 }
 
