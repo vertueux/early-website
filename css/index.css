@@ -19,6 +19,7 @@ body {
     font-weight: 450;
 
     overflow-x: hidden;
+    overflow-y: scroll;
     background-color: #f4f4f4;
 
     height: 100vh;
