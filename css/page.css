@@ -18,7 +18,7 @@
     font-family: Montserrat;
     font-weight: 500;
     letter-spacing: -2px;
-    margin-top: 170px;
+    margin-top: 140px;
     margin-bottom: 40px;
     font-size: 34px;
     vertical-align: top;
@@ -236,7 +236,7 @@ tbody tr.hide td p {
     background-color: transparent;
     padding: 0 0;
     margin-bottom: 90px;
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .2);
 }
 
 .input-group input {
@@ -252,6 +252,7 @@ tbody tr.hide td p {
     background-size: 17px;
     background-repeat: no-repeat;
     background-position: 13px 15px;
+    border-radius: 0;
 }
 
 @media (max-height: 1000px) {

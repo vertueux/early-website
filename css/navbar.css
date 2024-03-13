@@ -169,7 +169,7 @@ nav {
         display: flex;
         background: transparent;
         align-items: center;
-        right: var(--margin-tiny);
+        right: calc(var(--margin-tiny) + 5px);
         top: 25px;
         z-index: 3;
     }
@@ -380,6 +380,6 @@ nav {
     }
 
     .hamburger {
-        top: 20px;
+        top: 23px;
     }
 }
