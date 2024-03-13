@@ -35,7 +35,9 @@ main.table {
 
 .table__body {
     width: 100%;
-    max-height: 90%;
+
+    /* In testing. */
+    /*max-height: 90%;*/
 }
 
 table,
@@ -255,12 +257,13 @@ tbody tr.hide td p {
     border-radius: 0;
 }
 
-@media (max-height: 1000px) {
+/* In testing. */
+/*@media (max-height: 1000px) {
     .page {
         height: max-content;
         padding-bottom: 200px;
     }
-}
+}*/
 
 @media (max-width: 1450px) {
     .page {

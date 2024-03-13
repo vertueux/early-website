@@ -368,12 +368,6 @@ nav {
     }
 }
 
-@media (max-height: 200px) {
-    .navlinks-container {
-        height: 100vh;
-    }
-}
-
 @media (max-width: 800px) {
     .nav-icon span {
         display: none;
