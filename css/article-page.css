@@ -1,5 +1,5 @@
 :root {
-    --margin-tiny: 6%;
+    --article-margin-tiny: 8%;
     --page-width: 1300px;
     --padding-left-from-page: 230px;
 }
@@ -90,7 +90,7 @@
     font-weight: 400;
     letter-spacing: 0;
     width: calc(var(--page-width) - 2*var(--padding-left-from-page));
-    padding-right: var(--margin-tiny);
+    padding-right: var(--article-margin-tiny);
     padding-bottom: 160px;
 }
 
@@ -145,38 +145,38 @@
     }
 
     .intro {
-        padding-left: var(--margin-tiny);
+        padding-left: var(--article-margin-tiny);
     }
 
     .breakline {
-        margin-left: var(--margin-tiny);
-        width: calc(100% - 2*(var(--margin-tiny)));
+        margin-left: var(--article-margin-tiny);
+        width: calc(100% - 2*(var(--article-margin-tiny)));
     }
 
     #date {
-        margin-left: var(--margin-tiny);
+        margin-left: var(--article-margin-tiny);
     }
 
     #readpaper {
-        margin-left: var(--margin-tiny);
+        margin-left: var(--article-margin-tiny);
         margin-top: 30px;
     }
 
     #author {
-        margin-left: var(--margin-tiny);
+        margin-left: var(--article-margin-tiny);
     }
 
     #authorname {
-        margin-left: var(--margin-tiny);
+        margin-left: var(--article-margin-tiny);
         margin-top: 30px;
     }
 
     .pub-info {
-        margin-left: calc(var(--margin-tiny));
+        margin-left: calc(var(--article-margin-tiny));
     }
 
     .pub-info p {
-        width: calc(100% - var(--margin-tiny));
+        width: calc(100% - var(--article-margin-tiny));
     }
 
     #ptitle {
@@ -190,7 +190,7 @@
 
 @media (max-width: 1000px) {
     .pub-info p {
-        width: calc(100% - 2*(var(--margin-tiny)));
+        width: calc(100% - 2*(var(--article-margin-tiny)));
     }
 }
 
