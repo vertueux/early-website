@@ -1,14 +1,15 @@
 :root {
     --margin-tiny: 4%;
     --page-width: 1300px;
-    --navbar-height: 65px;
+    --pc-navbar-height: 55px;
+    --mobile-navbar-height: 45px;
     --mobile-nav-element-height: 100px;
 }
 
 nav {
     position: fixed;
     width: 100%;
-    height: var(--navbar-height);
+    height: var(--pc-navbar-height);
     padding-left: calc((100% - var(--page-width))/2);
     padding-right: calc((100% - var(--page-width))/2);
     display: flex;
@@ -141,6 +142,7 @@ nav {
         padding: 0;
         margin: 0;
         width: 100%;
+        height: var(--mobile-navbar-height);
 
         /* Fixing the nav margin. */
         margin-left: auto;
@@ -152,6 +154,14 @@ nav {
 
     .nav-icon {
         margin-left: var(--margin-tiny);
+    }
+
+    .nav-icon img {
+        width: 30px;
+    }
+
+    .nav-icon span {
+        display: none;
     }
 
     /* Removing the images. */
@@ -170,7 +180,7 @@ nav {
         background: transparent;
         align-items: center;
         right: calc(var(--margin-tiny) + 6px);
-        top: 25px;
+        top: 15px;
         z-index: 3;
     }
 
@@ -299,7 +309,7 @@ nav {
         background-color: #ffffff;
         width: 100%;
         left: 0;
-        top: var(--navbar-height);
+        top: var(--mobile-navbar-height);
         padding: 0;
         margin: 0;
         box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
@@ -377,9 +387,5 @@ nav {
 @media (max-width: 500px) {
     .nav-icon span {
         font-size: 20px;
-    }
-
-    .hamburger {
-        top: 23px;
     }
 }
