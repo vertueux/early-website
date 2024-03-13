@@ -169,7 +169,7 @@ nav {
         display: flex;
         background: transparent;
         align-items: center;
-        right: calc(var(--margin-tiny) + 5px);
+        right: calc(var(--margin-tiny) + 6px);
         top: 25px;
         z-index: 3;
     }
