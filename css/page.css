@@ -8,7 +8,7 @@
     margin-left: auto;
     position: relative;
     width: var(--page-width);
-    background-color: #f4f4f4;
+    background-color: #efefef;
     height: 100vh;
 }
 
@@ -71,7 +71,6 @@ tr {
     margin-right: auto;
     background-color: #ffffff;
     margin-bottom: 20px;
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
 }
 
 #ftr {
@@ -223,7 +222,6 @@ tbody tr.hide td p {
     border: 1px solid black;
     border-color: #000000;
     padding: 5px 10px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
 }
 
@@ -238,7 +236,6 @@ tbody tr.hide td p {
     background-color: transparent;
     padding: 0 0;
     margin-bottom: 40px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .2);
 }
 
 .input-group input {
@@ -247,7 +244,7 @@ tbody tr.hide td p {
     font-size: 16px;
     height: 50px;
     background-color: white;
-    border: 1px solid rgb(184, 184, 184);
+    border: none;
     padding-left: 25px;
     text-indent: 17px;
     background-image: url("../images/buttons/search-black.png");
