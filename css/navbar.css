@@ -20,7 +20,6 @@ nav {
     left: 50%;
     transform: translate(-50%, 0);
     background-color: #ffffff;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .2);
     z-index: 4;
 }
 
@@ -147,9 +146,6 @@ nav {
         /* Fixing the nav margin. */
         margin-left: auto;
         margin-right: auto;
-
-        /* Switching the box shadow to navlinks-container. */
-        box-shadow: none;
     }
 
     .nav-icon {
@@ -312,7 +308,6 @@ nav {
         top: var(--mobile-navbar-height);
         padding: 0;
         margin: 0;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .2);
         height: 5px;
         overflow: hidden;
         z-index: 4;

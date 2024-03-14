@@ -79,7 +79,7 @@
 .pub-info h1 {
     font-size: 28px;
     font-family: Montserrat;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 15px;
 }
 
@@ -87,7 +87,7 @@
     font-family: NotoSerifJP-Medium;
     color: #323232;
     font-size: 21px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0;
     width: calc(var(--page-width) - 2*var(--padding-left-from-page));
     padding-right: var(--article-margin-tiny);
@@ -109,7 +109,7 @@
 
 #author {
     font-family: Montserrat;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 #authorname {
