@@ -16,7 +16,7 @@
 #ptitle {
     display: inline-block;
     font-family: NotoSerifJP-Medium;
-    font-size: 48px;
+    font-size: 50px;
     font-weight: 100;
     vertical-align: top;
 }
@@ -86,7 +86,7 @@
 .pub-info p {
     font-family: Montserrat;
     color: #323232;
-    font-size: 15px;
+    font-size: 21px;
     font-weight: 400;
     letter-spacing: 0;
     width: calc(var(--page-width) - 2*var(--padding-left-from-page));
@@ -177,10 +177,11 @@
 
     .pub-info p {
         width: calc(100% - var(--article-margin-tiny));
+        font-size: 19px;
     }
 
     #ptitle {
-        font-size: 40px;
+        font-size: 42px;
     }
 
     .pub-info h1 {
@@ -196,7 +197,7 @@
 
 @media (max-width: 800px) {
     #ptitle {
-        font-size: 32px;
+        font-size: 34px;
     }
 
     .info-container span {
@@ -205,20 +206,12 @@
 
     .credits-container span {
         font-size: 15px;
-    }
-
-    .pub-info p {
-        font-size: 15px;
-    }
-
-    .pub-info h1 {
-        font-size: 26px;
     }
 }
 
 @media (max-width: 600px) {
     #ptitle {
-        font-size: 29px;
+        font-size: 31px;
     }
 
     .info-container span {
@@ -230,7 +223,7 @@
     }
 
     .pub-info p {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .pub-info h1 {
