@@ -84,10 +84,10 @@
 }
 
 .pub-info p {
-    font-family: Montserrat;
+    font-family: NotoSerifJP-Medium;
     color: #323232;
     font-size: 21px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
     width: calc(var(--page-width) - 2*var(--padding-left-from-page));
     padding-right: var(--article-margin-tiny);
@@ -121,11 +121,11 @@
 
 .info-container button {
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 25px;
     border: 1px solid black;
     border-color: #000000;
     padding: 5px 10px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
 }
 
@@ -136,7 +136,7 @@
     }
 
     .intro {
-        margin-top: 150px;
+        margin-top: 100px;
     }
 }
 
@@ -195,15 +195,15 @@
     .credits-container span {
         font-size: 18px;
     }
-
-    .info-container span {
-        font-size: 18px;
-    }
 }
 
 @media (max-width: 800px) {
     #ptitle {
         font-size: 37px;
+    }
+
+    .info-container span {
+        font-size: 15px;
     }
 }
 
@@ -213,7 +213,7 @@
     }
 
     .info-container span {
-        font-size: 17px;
+        font-size: 14px;
     }
 
     .credits-container span {
