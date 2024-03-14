@@ -33,7 +33,7 @@
     margin-top: 200px;
     vertical-align: top;
     padding-left: var(--padding-left-from-page);
-    padding-bottom: 100px;
+    padding-bottom: 75px;
 }
 
 .breakline {
@@ -47,7 +47,7 @@
 }
 
 .info-container span {
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
     color: black;
     display: inline-block;
@@ -100,7 +100,7 @@
 }
 
 .credits-container span {
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
     color: black;
     display: inline-block;
@@ -133,6 +133,10 @@
     .page {
         height: max-content;
         padding-bottom: 200px;
+    }
+
+    .intro {
+        margin-top: 150px;
     }
 }
 
@@ -187,19 +191,19 @@
     .pub-info h1 {
         font-size: 26px;
     }
+
+    .credits-container span {
+        font-size: 18px;
+    }
+
+    .info-container span {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 800px) {
     #ptitle {
         font-size: 37px;
-    }
-
-    .info-container span {
-        font-size: 15px;
-    }
-
-    .credits-container span {
-        font-size: 15px;
     }
 }
 
@@ -209,11 +213,11 @@
     }
 
     .info-container span {
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .credits-container span {
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .pub-info p {
