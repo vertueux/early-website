@@ -222,14 +222,14 @@ nav {
 
         100% {
             height: var(--mobile-nav-element-height);
-            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .2);
+            box-shadow: 0 2px 1px 0 rgba(0, 0, 0, .2);
         }
     }
 
     @keyframes slideoff {
         0% {
             height: var(--mobile-nav-element-height);
-            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .2);
+            box-shadow: 0 2px 1px 0 rgba(0, 0, 0, .2);
         }
 
         100% {
