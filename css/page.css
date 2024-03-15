@@ -69,7 +69,7 @@ tr {
     width: 700px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(251, 251, 251);
     margin-bottom: 20px;
 }
 
@@ -244,7 +244,7 @@ tbody tr.hide td p {
     font-size: 16px;
     letter-spacing: 0.5px;
     height: 50px;
-    background-color: white;
+    background-color: rgb(253, 253, 253);;
     border: 1px solid rgb(200, 200, 200);
     padding-left: 25px;
     text-indent: 17px;
@@ -253,10 +253,6 @@ tbody tr.hide td p {
     background-repeat: no-repeat;
     background-position: 13px 15px;
     border-radius: 0;
-}
-
-.input-group input::placeholder{
-    color: rgb(205, 205, 205);
 }
 
 /* In testing. */
